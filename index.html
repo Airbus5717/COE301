@@ -16,12 +16,12 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgde5fe8d">Resources</a></li>
-<li><a href="#org498e588">Mips assembly</a>
+<li><a href="#org7d2689a">Resources</a></li>
+<li><a href="#org32424f5">Mips assembly</a>
 <ul>
-<li><a href="#org86024f4">Introduction</a>
+<li><a href="#orgecd665a">Introduction</a>
 <ul>
-<li><a href="#orga77d499">Hello, World</a></li>
+<li><a href="#org8ed7c48">Hello, World</a></li>
 </ul>
 </li>
 </ul>
@@ -31,9 +31,9 @@
 </div>
 
 
-<div id="outline-container-orgde5fe8d" class="outline-2">
-<h2 id="orgde5fe8d">Resources</h2>
-<div class="outline-text-2" id="text-orgde5fe8d">
+<div id="outline-container-org7d2689a" class="outline-2">
+<h2 id="org7d2689a">Resources</h2>
+<div class="outline-text-2" id="text-org7d2689a">
 <ul class="org-ul">
 <li>Github repositary of this document <a href="https://github.com/Airbus5717/coe301">repo</a></li>
 <li>if you find any issue, report it here <a href="https://github.com/Airbus5717/coe301/issues">report issue</a></li>
@@ -46,28 +46,23 @@
 <hr />
 </div>
 </div>
-<div id="outline-container-org498e588" class="outline-2">
-<h2 id="org498e588">Mips assembly</h2>
-<div class="outline-text-2" id="text-org498e588">
+<div id="outline-container-org32424f5" class="outline-2">
+<h2 id="org32424f5">Mips assembly</h2>
+<div class="outline-text-2" id="text-org32424f5">
 </div>
-<div id="outline-container-org86024f4" class="outline-3">
-<h3 id="org86024f4">Introduction</h3>
-<div class="outline-text-3" id="text-org86024f4">
+<div id="outline-container-orgecd665a" class="outline-3">
+<h3 id="orgecd665a">Introduction</h3>
+<div class="outline-text-3" id="text-orgecd665a">
 </div>
 <ul class="org-ul">
-<li><a id="orgc674dc3"></a>Mars simulator Setup<br />
-<div class="outline-text-5" id="text-orgc674dc3">
+<li><a id="org7f60470"></a>Mars simulator Setup<br />
+<div class="outline-text-5" id="text-org7f60470">
 <ol class="org-ol">
 <li>File (or Ctrl-N) -&gt; New File</li>
-
 <li>Copy paste the code below</li>
-
 <li>Save the file (or Ctrl-S)</li>
-
 <li>Run (or F3) -&gt; Assemble</li>
-
 <li>If assembling was successful then continue</li>
-
 <li>Go (or F5) to run the whole program at once</li>
 </ol>
 </div>
@@ -75,16 +70,16 @@
 </ul>
 
 
-<div id="outline-container-orga77d499" class="outline-4">
-<h4 id="orga77d499">Hello, World</h4>
-<div class="outline-text-4" id="text-orga77d499">
+<div id="outline-container-org8ed7c48" class="outline-4">
+<h4 id="org8ed7c48">Hello, World</h4>
+<div class="outline-text-4" id="text-org8ed7c48">
 <div class="org-src-container">
 <pre class="src src-mips"><span style="color: #928374;"># </span><span style="color: #b8bb26; font-weight: bold;">NOTE:</span><span style="color: #928374;"> Hello, World in assembly</span>
 <span style="color: #ebdbb2; font-weight: bold;">.globl</span> main
 
 <span style="color: #928374;"># </span><span style="color: #928374;">data segment (global variables)</span>
 <span style="color: #ebdbb2; font-weight: bold;">.data</span>
-<span style="color: #b8bb26;">msg:</span> <span style="color: #ebdbb2; font-weight: bold;">.asciiz</span> <span style="color: #b8bb26;">"Hello, World"</span>
+<span style="color: #b8bb26;">msg:</span> <span style="color: #ebdbb2; font-weight: bold;">.asciiz</span> <span style="color: #b8bb26;">"Hello, World\n"</span>
     <span style="color: #928374;"># </span><span style="color: #928374;">asciiz includes the null terminator (\0) in string</span>
 
 <span style="color: #928374;"># </span><span style="color: #928374;">code segment</span>

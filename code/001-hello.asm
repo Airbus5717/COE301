@@ -5,7 +5,7 @@
 
 # data segment
 .data 
-msg: .asciiz "Hello, World"
+msg: .asciiz "Hello, World\n"
 
 # code segment
 .text
@@ -16,6 +16,8 @@ main:
 	li $v0, 4
 	syscall
 	
+	# print string msg again using macro
+	print_str(msg)	
 # call exit macro from macro file(included file)
 	exit()
 	
