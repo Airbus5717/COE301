@@ -15,6 +15,20 @@
 -----
 * Mips assembly
 ** Introduction
+**** Mars simulator Setup
+1. File (or Ctrl-N) -> New File
+
+2. Copy paste the code below
+
+3. Save the file (or Ctrl-S)
+
+4. Run (or F3) -> Assemble
+
+5. If assembling was successful then continue
+
+6. Go (or F5) to run the whole program at once
+
+
 *** Hello, World
 #+begin_src mips
 # NOTE: Hello, World in assembly
