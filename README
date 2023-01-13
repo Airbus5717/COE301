@@ -3,9 +3,9 @@
 - HTML is generated 
 - PDF is going to be generated after i finish the course 
 
-
 ## TO CONTRIBUTE 
-create an issue on github
+do a Pull request (org mode or examples only)
+the html will be auto generated
 
 ## LICENSE 
 MIT 

@@ -16,12 +16,12 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org965cc48">Resources</a></li>
-<li><a href="#orgc0248b8">Mips assembly</a>
+<li><a href="#org93597eb">Resources</a></li>
+<li><a href="#org740ff48">Mips assembly</a>
 <ul>
-<li><a href="#orga87db0d">Introduction</a>
+<li><a href="#org9fb9e22">Introduction</a>
 <ul>
-<li><a href="#org73cdbea">Hello, World</a></li>
+<li><a href="#org4b51101">Hello, World</a></li>
 </ul>
 </li>
 </ul>
@@ -29,18 +29,14 @@
 </ul>
 </div>
 </div>
-<blockquote>
-<p>
-Github repositary of this document <a href="https://github.com/Airbus5717/coe301">repo</a>
-</p>
-</blockquote>
 
 
-<div id="outline-container-org965cc48" class="outline-2">
-<h2 id="org965cc48">Resources</h2>
-<div class="outline-text-2" id="text-org965cc48">
+<div id="outline-container-org93597eb" class="outline-2">
+<h2 id="org93597eb">Resources</h2>
+<div class="outline-text-2" id="text-org93597eb">
 <ul class="org-ul">
-<li>Visit the github for the raw code examples files</li>
+<li>Github repositary of this document <a href="https://github.com/Airbus5717/coe301">repo</a></li>
+<li>if you find any issue, report it here <a href="https://github.com/Airbus5717/coe301/issues">report issue</a></li>
 <li>Mars mips simulator <a href="https://courses.missouristate.edu/KenVollmar/mars/download.htm">link</a></li>
 <li>Dr. Mudawwar&rsquo;s videos <a href="https://youtube.com/playlist?list=PLeurb_BIjrxjSmBhm_h3TkN8pWxM_1ViU">link</a></li>
 <li>Mips assembly videos <a href="https://www.youtube.com/playlist?list=PL1C2GgOjAF-KYdV5bH-xzoybEHreDZ3Kh">Padraic Edgington</a></li>
@@ -50,23 +46,22 @@ Github repositary of this document <a href="https://github.com/Airbus5717/coe301
 <hr />
 </div>
 </div>
-<div id="outline-container-orgc0248b8" class="outline-2">
-<h2 id="orgc0248b8">Mips assembly</h2>
-<div class="outline-text-2" id="text-orgc0248b8">
+<div id="outline-container-org740ff48" class="outline-2">
+<h2 id="org740ff48">Mips assembly</h2>
+<div class="outline-text-2" id="text-org740ff48">
 </div>
-<div id="outline-container-orga87db0d" class="outline-3">
-<h3 id="orga87db0d">Introduction</h3>
-<div class="outline-text-3" id="text-orga87db0d">
+<div id="outline-container-org9fb9e22" class="outline-3">
+<h3 id="org9fb9e22">Introduction</h3>
+<div class="outline-text-3" id="text-org9fb9e22">
 </div>
-<div id="outline-container-org73cdbea" class="outline-4">
-<h4 id="org73cdbea">Hello, World</h4>
-<div class="outline-text-4" id="text-org73cdbea">
+<div id="outline-container-org4b51101" class="outline-4">
+<h4 id="org4b51101">Hello, World</h4>
+<div class="outline-text-4" id="text-org4b51101">
 <div class="org-src-container">
 <pre class="src src-mips"><span style="color: #928374;"># </span><span style="color: #b8bb26; font-weight: bold;">NOTE:</span><span style="color: #928374;"> Hello, World in assembly</span>
 <span style="color: #ebdbb2; font-weight: bold;">.globl</span> main
-.include <span style="color: #b8bb26;">"macros.asm"</span> <span style="color: #928374;">#</span><span style="color: #928374;">includes the whole file</span>
 
-<span style="color: #928374;"># </span><span style="color: #928374;">data segment</span>
+<span style="color: #928374;"># </span><span style="color: #928374;">data segment (global variables)</span>
 <span style="color: #ebdbb2; font-weight: bold;">.data</span>
 <span style="color: #b8bb26;">msg:</span> <span style="color: #ebdbb2; font-weight: bold;">.asciiz</span> <span style="color: #b8bb26;">"Hello, World"</span>
     <span style="color: #928374;"># </span><span style="color: #928374;">asciiz includes the null terminator (\0) in string</span>

@@ -3,13 +3,10 @@
 #+OPTIONS: num:nil html-style:nil timestamp:nil date:nil author:nil
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css"/>
 
-#+begin_quote
-Github repositary of this document [[https://github.com/Airbus5717/coe301][repo]]
-#+end_quote
-
 
 * Resources
-- Visit the github for the raw code examples files
+- Github repositary of this document [[https://github.com/Airbus5717/coe301][repo]]
+- if you find any issue, report it here [[https://github.com/Airbus5717/coe301/issues][report issue]]
 - Mars mips simulator [[https://courses.missouristate.edu/KenVollmar/mars/download.htm][link]]
 - Dr. Mudawwar's videos [[https://youtube.com/playlist?list=PLeurb_BIjrxjSmBhm_h3TkN8pWxM_1ViU][link]]
 - Mips assembly videos [[https://www.youtube.com/playlist?list=PL1C2GgOjAF-KYdV5bH-xzoybEHreDZ3Kh][Padraic Edgington]]
