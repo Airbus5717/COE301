@@ -1,17 +1,15 @@
 #+title: COE301 NOTES
 #+author: Airbus5717
-#+options: num:nil date:nil
+#+OPTIONS: num:nil html-style:nil timestamp:nil date:nil author:nil
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css"/>
 
-#+begin_src mips
-# Hello, World in MIPS assembly
-.data
-msg: .asciiz "Hello, World"
-.text
-    li $v0, 4
-    la $a0, msg
-    syscall
-
-    # exit
-    li $v0, 10
-    syscall
-#+end_src
+* Resources
+- Github repositary of this document [[https://github.com/Airbus5717/coe301][repo]]
+- Visit the github for the code examples files
+- Mars mips simulator [[https://courses.missouristate.edu/KenVollmar/mars/download.htm][link]]
+- Dr. Mudawwar's videos [[https://youtube.com/playlist?list=PLeurb_BIjrxjSmBhm_h3TkN8pWxM_1ViU][link]]
+- Mips assembly videos [[https://www.youtube.com/playlist?list=PL1C2GgOjAF-KYdV5bH-xzoybEHreDZ3Kh][Padraic Edgington]]
+- Mips assembly videos [[https://www.youtube.com/playlist?list=PL5b07qlmA3P6zUdDf-o97ddfpvPFuNa5A][Amell Peralta]]
+- Slides from oregon state university [[https://web.engr.oregonstate.edu/~walkiner/cs271-wi13/slides/][class 2013]]
+-----
+* Mips assembly
