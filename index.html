@@ -16,29 +16,77 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgb1db7ac">Resources</a></li>
-<li><a href="#org6a85e68">Mips assembly</a></li>
+<li><a href="#org965cc48">Resources</a></li>
+<li><a href="#orgc0248b8">Mips assembly</a>
+<ul>
+<li><a href="#orga87db0d">Introduction</a>
+<ul>
+<li><a href="#org73cdbea">Hello, World</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
+<blockquote>
+<p>
+Github repositary of this document <a href="https://github.com/Airbus5717/coe301">repo</a>
+</p>
+</blockquote>
 
-<div id="outline-container-orgb1db7ac" class="outline-2">
-<h2 id="orgb1db7ac">Resources</h2>
-<div class="outline-text-2" id="text-orgb1db7ac">
+
+<div id="outline-container-org965cc48" class="outline-2">
+<h2 id="org965cc48">Resources</h2>
+<div class="outline-text-2" id="text-org965cc48">
 <ul class="org-ul">
-<li>Github repositary of this document <a href="https://github.com/Airbus5717/coe301">repo</a></li>
-<li>Visit the github for the code examples files</li>
+<li>Visit the github for the raw code examples files</li>
 <li>Mars mips simulator <a href="https://courses.missouristate.edu/KenVollmar/mars/download.htm">link</a></li>
 <li>Dr. Mudawwar&rsquo;s videos <a href="https://youtube.com/playlist?list=PLeurb_BIjrxjSmBhm_h3TkN8pWxM_1ViU">link</a></li>
 <li>Mips assembly videos <a href="https://www.youtube.com/playlist?list=PL1C2GgOjAF-KYdV5bH-xzoybEHreDZ3Kh">Padraic Edgington</a></li>
 <li>Mips assembly videos <a href="https://www.youtube.com/playlist?list=PL5b07qlmA3P6zUdDf-o97ddfpvPFuNa5A">Amell Peralta</a></li>
-<li>Slides from oregon state university <a href="https://web.engr.oregonstate.edu/~walkiner/cs271-wi13/slides/">class 2013</a></li>
+<li>Mips assembly Slides from oregon state uni <a href="https://web.engr.oregonstate.edu/~walkiner/cs271-wi13/slides/">class 2013</a></li>
 </ul>
 <hr />
 </div>
 </div>
-<div id="outline-container-org6a85e68" class="outline-2">
-<h2 id="org6a85e68">Mips assembly</h2>
+<div id="outline-container-orgc0248b8" class="outline-2">
+<h2 id="orgc0248b8">Mips assembly</h2>
+<div class="outline-text-2" id="text-orgc0248b8">
+</div>
+<div id="outline-container-orga87db0d" class="outline-3">
+<h3 id="orga87db0d">Introduction</h3>
+<div class="outline-text-3" id="text-orga87db0d">
+</div>
+<div id="outline-container-org73cdbea" class="outline-4">
+<h4 id="org73cdbea">Hello, World</h4>
+<div class="outline-text-4" id="text-org73cdbea">
+<div class="org-src-container">
+<pre class="src src-mips"><span style="color: #928374;"># </span><span style="color: #b8bb26; font-weight: bold;">NOTE:</span><span style="color: #928374;"> Hello, World in assembly</span>
+<span style="color: #ebdbb2; font-weight: bold;">.globl</span> main
+.include <span style="color: #b8bb26;">"macros.asm"</span> <span style="color: #928374;">#</span><span style="color: #928374;">includes the whole file</span>
+
+<span style="color: #928374;"># </span><span style="color: #928374;">data segment</span>
+<span style="color: #ebdbb2; font-weight: bold;">.data</span>
+<span style="color: #b8bb26;">msg:</span> <span style="color: #ebdbb2; font-weight: bold;">.asciiz</span> <span style="color: #b8bb26;">"Hello, World"</span>
+    <span style="color: #928374;"># </span><span style="color: #928374;">asciiz includes the null terminator (\0) in string</span>
+
+<span style="color: #928374;"># </span><span style="color: #928374;">code segment</span>
+<span style="color: #ebdbb2; font-weight: bold;">.text</span>
+<span style="color: #b8bb26;">main:</span>
+    <span style="color: #928374;"># </span><span style="color: #928374;">print string msg</span>
+    <span style="color: #83a598;">la</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> msg <span style="color: #928374;"># </span><span style="color: #928374;">loads address of msg to $a0</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">4</span>   <span style="color: #928374;"># </span><span style="color: #928374;">loads immediate (4) to $v0</span>
+    <span style="color: #fb4934;">syscall</span>
+
+    <span style="color: #928374;"># </span><span style="color: #928374;">exit</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">10</span>
+    <span style="color: #fb4934;">syscall</span>
+</pre>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </body>

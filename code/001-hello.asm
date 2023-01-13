@@ -1,8 +1,4 @@
-#
-# NOTE: Hello world program in mips
-# 
-
-# NOTE: where to start
+# NOTE: Hello, World in assembly
 .globl main
 # includes a file and inserts the whole file here
 .include "macros.asm"

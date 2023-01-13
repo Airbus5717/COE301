@@ -3,13 +3,40 @@
 #+OPTIONS: num:nil html-style:nil timestamp:nil date:nil author:nil
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css"/>
 
+#+begin_quote
+Github repositary of this document [[https://github.com/Airbus5717/coe301][repo]]
+#+end_quote
+
+
 * Resources
-- Github repositary of this document [[https://github.com/Airbus5717/coe301][repo]]
-- Visit the github for the code examples files
+- Visit the github for the raw code examples files
 - Mars mips simulator [[https://courses.missouristate.edu/KenVollmar/mars/download.htm][link]]
 - Dr. Mudawwar's videos [[https://youtube.com/playlist?list=PLeurb_BIjrxjSmBhm_h3TkN8pWxM_1ViU][link]]
 - Mips assembly videos [[https://www.youtube.com/playlist?list=PL1C2GgOjAF-KYdV5bH-xzoybEHreDZ3Kh][Padraic Edgington]]
 - Mips assembly videos [[https://www.youtube.com/playlist?list=PL5b07qlmA3P6zUdDf-o97ddfpvPFuNa5A][Amell Peralta]]
-- Slides from oregon state university [[https://web.engr.oregonstate.edu/~walkiner/cs271-wi13/slides/][class 2013]]
+- Mips assembly Slides from oregon state uni [[https://web.engr.oregonstate.edu/~walkiner/cs271-wi13/slides/][class 2013]]
 -----
 * Mips assembly
+** Introduction
+*** Hello, World
+#+begin_src mips
+# NOTE: Hello, World in assembly
+.globl main
+
+# data segment (global variables)
+.data
+msg: .asciiz "Hello, World"
+    # asciiz includes the null terminator (\0) in string
+
+# code segment
+.text
+main:
+    # print string msg
+    la $a0, msg # loads address of msg to $a0
+    li $v0, 4   # loads immediate (4) to $v0
+    syscall
+
+    # exit
+    li $v0, 10
+    syscall
+#+end_src
