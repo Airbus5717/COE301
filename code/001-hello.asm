@@ -1,23 +1,22 @@
 # NOTE: Hello, World in assembly
 .globl main
-# includes a file and inserts the whole file here
-.include "macros.asm"
 
-# data segment
-.data 
+# data segment (global variables)
+.data
 msg: .asciiz "Hello, World\n"
+    # asciiz includes the null terminator (\0) in string
 
 # code segment
 .text
-# main label
 main:
-	# print string msg
-	la $a0, msg
-	li $v0, 4
-	syscall
-	
-	# print string msg again using macro
-	print_str(msg)	
-# call exit macro from macro file(included file)
-	exit()
-	
+    # print string msg
+    # 4 is the syscall number for print string
+    la $a0, msg # loads address of msg to $a0
+    li $v0, 4   # loads immediate (4) to $v0
+    syscall
+
+    # exit
+    # exit syscall is 10
+    li $v0, 10 
+    syscall
+

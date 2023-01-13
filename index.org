@@ -7,6 +7,7 @@
 * Resources
 - Github repositary of this document [[https://github.com/Airbus5717/coe301][repo]]
 - if you find any issue, report it here [[https://github.com/Airbus5717/coe301/issues][report issue]]
+- Mips syscalls [[https://courses.missouristate.edu/kenvollmar/mars/help/syscallhelp.html ][link]]
 - Mars mips simulator [[https://courses.missouristate.edu/KenVollmar/mars/download.htm][link]]
 - Dr. Mudawwar's videos [[https://youtube.com/playlist?list=PLeurb_BIjrxjSmBhm_h3TkN8pWxM_1ViU][link]]
 - Mips assembly videos [[https://www.youtube.com/playlist?list=PL1C2GgOjAF-KYdV5bH-xzoybEHreDZ3Kh][Padraic Edgington]]
@@ -25,24 +26,4 @@
 
 
 *** Hello, World
-#+begin_src mips
-# NOTE: Hello, World in assembly
-.globl main
-
-# data segment (global variables)
-.data
-msg: .asciiz "Hello, World\n"
-    # asciiz includes the null terminator (\0) in string
-
-# code segment
-.text
-main:
-    # print string msg
-    la $a0, msg # loads address of msg to $a0
-    li $v0, 4   # loads immediate (4) to $v0
-    syscall
-
-    # exit
-    li $v0, 10
-    syscall
-#+end_src
+#+include: "./code/001-hello.asm" src mips

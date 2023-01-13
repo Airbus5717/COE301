@@ -16,12 +16,12 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org7d2689a">Resources</a></li>
-<li><a href="#org32424f5">Mips assembly</a>
+<li><a href="#orgb23d33a">Resources</a></li>
+<li><a href="#org176be22">Mips assembly</a>
 <ul>
-<li><a href="#orgecd665a">Introduction</a>
+<li><a href="#orgf324733">Introduction</a>
 <ul>
-<li><a href="#org8ed7c48">Hello, World</a></li>
+<li><a href="#org75d42b0">Hello, World</a></li>
 </ul>
 </li>
 </ul>
@@ -31,12 +31,13 @@
 </div>
 
 
-<div id="outline-container-org7d2689a" class="outline-2">
-<h2 id="org7d2689a">Resources</h2>
-<div class="outline-text-2" id="text-org7d2689a">
+<div id="outline-container-orgb23d33a" class="outline-2">
+<h2 id="orgb23d33a">Resources</h2>
+<div class="outline-text-2" id="text-orgb23d33a">
 <ul class="org-ul">
 <li>Github repositary of this document <a href="https://github.com/Airbus5717/coe301">repo</a></li>
 <li>if you find any issue, report it here <a href="https://github.com/Airbus5717/coe301/issues">report issue</a></li>
+<li>Mips syscalls <a href="https://courses.missouristate.edu/kenvollmar/mars/help/syscallhelp.html%20">link</a></li>
 <li>Mars mips simulator <a href="https://courses.missouristate.edu/KenVollmar/mars/download.htm">link</a></li>
 <li>Dr. Mudawwar&rsquo;s videos <a href="https://youtube.com/playlist?list=PLeurb_BIjrxjSmBhm_h3TkN8pWxM_1ViU">link</a></li>
 <li>Mips assembly videos <a href="https://www.youtube.com/playlist?list=PL1C2GgOjAF-KYdV5bH-xzoybEHreDZ3Kh">Padraic Edgington</a></li>
@@ -46,17 +47,17 @@
 <hr />
 </div>
 </div>
-<div id="outline-container-org32424f5" class="outline-2">
-<h2 id="org32424f5">Mips assembly</h2>
-<div class="outline-text-2" id="text-org32424f5">
+<div id="outline-container-org176be22" class="outline-2">
+<h2 id="org176be22">Mips assembly</h2>
+<div class="outline-text-2" id="text-org176be22">
 </div>
-<div id="outline-container-orgecd665a" class="outline-3">
-<h3 id="orgecd665a">Introduction</h3>
-<div class="outline-text-3" id="text-orgecd665a">
+<div id="outline-container-orgf324733" class="outline-3">
+<h3 id="orgf324733">Introduction</h3>
+<div class="outline-text-3" id="text-orgf324733">
 </div>
 <ul class="org-ul">
-<li><a id="org7f60470"></a>Mars simulator Setup<br />
-<div class="outline-text-5" id="text-org7f60470">
+<li><a id="org9f36b52"></a>Mars simulator Setup<br />
+<div class="outline-text-5" id="text-org9f36b52">
 <ol class="org-ol">
 <li>File (or Ctrl-N) -&gt; New File</li>
 <li>Copy paste the code below</li>
@@ -70,9 +71,9 @@
 </ul>
 
 
-<div id="outline-container-org8ed7c48" class="outline-4">
-<h4 id="org8ed7c48">Hello, World</h4>
-<div class="outline-text-4" id="text-org8ed7c48">
+<div id="outline-container-org75d42b0" class="outline-4">
+<h4 id="org75d42b0">Hello, World</h4>
+<div class="outline-text-4" id="text-org75d42b0">
 <div class="org-src-container">
 <pre class="src src-mips"><span style="color: #928374;"># </span><span style="color: #b8bb26; font-weight: bold;">NOTE:</span><span style="color: #928374;"> Hello, World in assembly</span>
 <span style="color: #ebdbb2; font-weight: bold;">.globl</span> main
@@ -86,12 +87,14 @@
 <span style="color: #ebdbb2; font-weight: bold;">.text</span>
 <span style="color: #b8bb26;">main:</span>
     <span style="color: #928374;"># </span><span style="color: #928374;">print string msg</span>
+    <span style="color: #928374;"># </span><span style="color: #928374;">4 is the syscall number for print string</span>
     <span style="color: #83a598;">la</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> msg <span style="color: #928374;"># </span><span style="color: #928374;">loads address of msg to $a0</span>
     <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">4</span>   <span style="color: #928374;"># </span><span style="color: #928374;">loads immediate (4) to $v0</span>
     <span style="color: #fb4934;">syscall</span>
 
     <span style="color: #928374;"># </span><span style="color: #928374;">exit</span>
-    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">10</span>
+    <span style="color: #928374;"># </span><span style="color: #928374;">exit syscall is 10</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">10</span> 
     <span style="color: #fb4934;">syscall</span>
 </pre>
 </div>
