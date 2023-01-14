@@ -1,12 +1,12 @@
 #+title: COE301 NOTES
 #+author: Airbus5717
-#+OPTIONS: num:nil html-style:nil timestamp:nil date:nil author:nil
+#+OPTIONS: num:nil timestamp:nil date:nil author:nil
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css"/>
 
 
 * Resources
-- Github repositary of this document [[https://github.com/Airbus5717/coe301][repo]]
-- if you find any issue, report it here [[https://github.com/Airbus5717/coe301/issues][report issue]]
+- Github repositary of this document [[https://github.com/Airbus5717/coe301][repo]] which contains Term221 resources too
+- If you find any issue, report it here [[https://github.com/Airbus5717/coe301/issues][report issue]]
 - Mips syscalls [[https://courses.missouristate.edu/kenvollmar/mars/help/syscallhelp.html ][link]]
 - Mars mips simulator [[https://courses.missouristate.edu/KenVollmar/mars/download.htm][link]]
 - Dr. Mudawwar's videos [[https://youtube.com/playlist?list=PLeurb_BIjrxjSmBhm_h3TkN8pWxM_1ViU][link]]
@@ -16,7 +16,7 @@
 -----
 * Mips assembly
 ** Introduction
-**** Mars simulator Setup
+*** Mars simulator Setup
 1. File (or Ctrl-N) -> New File
 2. Copy paste the code below
 3. Save the file (or Ctrl-S)

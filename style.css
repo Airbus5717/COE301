@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 html {
   margin: 40px auto;
@@ -10,28 +12,14 @@ html {
   /* font-family: "Inter", sans-serif; */
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-li,
-p,
+h1, h2,
+h3, h4,
+h5, h6,
+li, p,
 a {
   color: #c5c5c5;
-  line-height: 1.2;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-li,
-a {
-  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+  font-family: 'Roboto', sans-serif;
 }
 
 img {
@@ -46,10 +34,10 @@ pre {
   border-radius: 1rem;
   counter-reset: line;
   color: #ededed;
-  font-family: "Inconsolata", monospace;
+  font-family: 'Courier Prime', monospace;
 }
 
 ::selection {
-  color: #212b36;
+  color: #181f27;
   background: #e79e67;
 }
