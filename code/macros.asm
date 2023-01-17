@@ -1,7 +1,7 @@
 # NOTE: useful macros for general development  
 
 
-# to exit program
+# exit program
 # no params required
 .macro exit() 
 	li $v0, 10

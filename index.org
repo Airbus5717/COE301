@@ -1,12 +1,15 @@
-#+title: COE301 NOTES
+#+title: COE301 LAB NOTES
 #+author: Airbus5717
-#+OPTIONS: num:nil timestamp:nil date:nil author:nil
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css"/>
+#+OPTIONS: num:nil timestamp:nil date:nil author:nil html-style:nil
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="http://thomasf.github.io/solarized-css/solarized-dark.min.css" />
 
-
-* Resources
+#+begin_quote
 - Github repositary of this document [[https://github.com/Airbus5717/coe301][repo]] which contains Term221 resources too
 - If you find any issue, report it here [[https://github.com/Airbus5717/coe301/issues][report issue]]
+#+end_quote
+
+* Resources
+- Dr. Mudawar resources [[https://faculty.kfupm.edu.sa/coe/mudawar/coe301/lectures/index.htm][slides, examples etc.]]
 - Mips syscalls [[https://courses.missouristate.edu/kenvollmar/mars/help/syscallhelp.html ][link]]
 - Mars mips simulator [[https://courses.missouristate.edu/KenVollmar/mars/download.htm][link]]
 - Dr. Mudawwar's videos [[https://youtube.com/playlist?list=PLeurb_BIjrxjSmBhm_h3TkN8pWxM_1ViU][link]]
@@ -14,7 +17,8 @@
 - Mips assembly videos [[https://www.youtube.com/playlist?list=PL5b07qlmA3P6zUdDf-o97ddfpvPFuNa5A][Amell Peralta]]
 - Mips assembly Slides from oregon state uni [[https://web.engr.oregonstate.edu/~walkiner/cs271-wi13/slides/][class 2013]]
 -----
-* Mips assembly
+
+* MIPS assembly
 ** Introduction
 *** Mars simulator Setup
 1. File (or Ctrl-N) -> New File
@@ -27,3 +31,6 @@
 
 *** Hello, World
 #+include: "./code/001-hello.asm" src mips
+
+*** More about MIPS assembly
+MIPS assembly was introduced in 1986 and there are different versions (I, I, ..., MIPS32, MIPS64).

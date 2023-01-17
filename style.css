@@ -1,17 +1,12 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap"); */
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-html {
-  margin: 40px auto;
-  max-width: 60rem;
+body {
+  /*margin: 2rem auto;
+  padding: 0 2rem;
+   max-width: 60rem;*/
   line-height: 1.6;
   font-size: 1.2rem;
   background-color: #0f141b;
-  padding: 0 10rem;
-  /* font-family: "Inter", sans-serif; */
 }
-
 h1, h2,
 h3, h4,
 h5, h6,
@@ -39,5 +34,4 @@ pre {
 
 ::selection {
   color: #181f27;
-  background: #e79e67;
-}
+  background: #e79e67; }
