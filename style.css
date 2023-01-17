@@ -5,14 +5,15 @@ body {
    max-width: 60rem;*/
   line-height: 1.6;
   font-size: 1.2rem;
-  background-color: #0f141b;
+  /* background-color: #0f141b; */
+  border: none;
+  border-radius: 1rem;
 }
 h1, h2,
 h3, h4,
 h5, h6,
 li, p,
 a {
-  color: #c5c5c5;
   line-height: 1.6;
   font-family: 'Roboto', sans-serif;
 }
@@ -24,11 +25,9 @@ img {
 
 pre {
   background-color: #181f27;
-  margin: 1rem;
-  padding: 1rem;
   border-radius: 1rem;
-  counter-reset: line;
-  color: #ededed;
+  border: none;
+  /*color: #ededed;*/
   font-family: 'Courier Prime', monospace;
 }
 

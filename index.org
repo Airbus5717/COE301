@@ -2,6 +2,7 @@
 #+author: Airbus5717
 #+OPTIONS: num:nil timestamp:nil date:nil author:nil html-style:nil
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="solarized-dark.min.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css" />
 
 #+begin_quote
 - Github repositary of this document [[https://github.com/Airbus5717/coe301][repo]] which contains Term221 resources too
