@@ -19,10 +19,10 @@ pre {
   background-color: #181f27;
   border-radius: 1rem;
   border: none;
-  /*color: #ededed;*/
   font-family: monospace;
 }
 
 ::selection {
   color: #181f27;
-  background: #e79e67; }
+  background: #e79e67;
+}
