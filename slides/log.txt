@@ -1,0 +1,13 @@
+convert /home/air/uni/coe301/notes/slides/01-Introduction.pptx -> /home/air/uni/coe301/notes/slides/01-Introduction.pdf using filter : impress_pdf_Export
+convert /home/air/uni/coe301/notes/slides/02-IntroductionAssemblyLanguage.pptx -> /home/air/uni/coe301/notes/slides/02-IntroductionAssemblyLanguage.pdf using filter : impress_pdf_Export
+convert /home/air/uni/coe301/notes/slides/03-DataRepresentation.pptx -> /home/air/uni/coe301/notes/slides/03-DataRepresentation.pdf using filter : impress_pdf_Export
+convert /home/air/uni/coe301/notes/slides/04-ALU-Instructions.pptx -> /home/air/uni/coe301/notes/slides/04-ALU-Instructions.pdf using filter : impress_pdf_Export
+convert /home/air/uni/coe301/notes/slides/05-ControlFlow-Arrays.pptx -> /home/air/uni/coe301/notes/slides/05-ControlFlow-Arrays.pdf using filter : impress_pdf_Export
+convert /home/air/uni/coe301/notes/slides/06-MultiplyDivide.pptx -> /home/air/uni/coe301/notes/slides/06-MultiplyDivide.pdf using filter : impress_pdf_Export
+convert /home/air/uni/coe301/notes/slides/07-MIPS-Functions.pptx -> /home/air/uni/coe301/notes/slides/07-MIPS-Functions.pdf using filter : impress_pdf_Export
+convert /home/air/uni/coe301/notes/slides/08-FloatingPoint.pptx -> /home/air/uni/coe301/notes/slides/08-FloatingPoint.pdf using filter : impress_pdf_Export
+convert /home/air/uni/coe301/notes/slides/09-SingleCycleProcessor.pptx -> /home/air/uni/coe301/notes/slides/09-SingleCycleProcessor.pdf using filter : impress_pdf_Export
+convert /home/air/uni/coe301/notes/slides/10-Performance.pptx -> /home/air/uni/coe301/notes/slides/10-Performance.pdf using filter : impress_pdf_Export
+convert /home/air/uni/coe301/notes/slides/11-Serial_vs_Pipelined.pptx -> /home/air/uni/coe301/notes/slides/11-Serial_vs_Pipelined.pdf using filter : impress_pdf_Export
+convert /home/air/uni/coe301/notes/slides/12-PipelinedProcessor.pptx -> /home/air/uni/coe301/notes/slides/12-PipelinedProcessor.pdf using filter : impress_pdf_Export
+convert /home/air/uni/coe301/notes/slides/13-Memory.pptx -> /home/air/uni/coe301/notes/slides/13-Memory.pdf using filter : impress_pdf_Export
