@@ -5,15 +5,17 @@
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css" />
 
 #+begin_quote
+- I recommend viewing this website on a non mobile device
 - Github repositary of this document [[https://github.com/Airbus5717/coe301][repo]] which contains Term221 resources too
 - If you find any issue, report it here [[https://github.com/Airbus5717/coe301/issues][report issue]]
 #+end_quote
 
 * Resources
 - Dr. Mudawar resources [[https://faculty.kfupm.edu.sa/coe/mudawar/coe301/lectures/index.htm][slides, examples etc.]]
-- Mips syscalls [[https://courses.missouristate.edu/kenvollmar/mars/help/syscallhelp.html ][link]]
+- MIPS syscalls [[https://courses.missouristate.edu/kenvollmar/mars/help/syscallhelp.html ][link]]
 - Mars mips simulator [[https://courses.missouristate.edu/KenVollmar/mars/download.htm][link]]
 - Dr. Mudawwar's videos [[https://youtube.com/playlist?list=PLeurb_BIjrxjSmBhm_h3TkN8pWxM_1ViU][link]]
+- MIPS assembly reference [[https://uweb.engr.arizona.edu/~ece369/Resources/spim/MIPSReference.pdf][arizona uni]]
 - Mips assembly videos [[https://www.youtube.com/playlist?list=PL1C2GgOjAF-KYdV5bH-xzoybEHreDZ3Kh][Padraic Edgington]]
 - Mips assembly videos [[https://www.youtube.com/playlist?list=PL5b07qlmA3P6zUdDf-o97ddfpvPFuNa5A][Amell Peralta]]
 - Mips assembly Slides from oregon state uni [[https://web.engr.oregonstate.edu/~walkiner/cs271-wi13/slides/][class 2013]]
@@ -35,3 +37,8 @@
 
 *** More about MIPS assembly
 MIPS assembly was introduced in 1986 and there are different versions (I, I, ..., MIPS32, MIPS64).
+
+*** Basic Syscalls
+Full reference MIPS syscalls [[https://courses.missouristate.edu/kenvollmar/mars/help/syscallhelp.html ][link]]
+
+*** Basic Instructions

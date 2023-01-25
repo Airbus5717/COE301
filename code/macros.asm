@@ -15,3 +15,12 @@
 	li $v0, 4
 	syscall
 .end_macro
+
+# print int
+# param(d): int input
+.macro print_int(%d)
+	la $a0, %d
+	li $v0, 1
+	syscall
+.end_macro
+
