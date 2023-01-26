@@ -12,7 +12,7 @@
 
 * Resources
 - Dr. Mudawar resources [[https://faculty.kfupm.edu.sa/coe/mudawar/coe301/lectures/index.htm][slides, examples etc.]]
-- MIPS syscalls [[https://courses.missouristate.edu/kenvollmar/mars/help/syscallhelp.html ][link]]
+- MIPS syscalls [[https://courses.missouristate.edu/kenvollmar/mars/help/syscallhelp.html][link]]
 - Mars mips simulator [[https://courses.missouristate.edu/KenVollmar/mars/download.htm][link]]
 - Dr. Mudawwar's videos [[https://youtube.com/playlist?list=PLeurb_BIjrxjSmBhm_h3TkN8pWxM_1ViU][link]]
 - MIPS assembly reference [[https://uweb.engr.arizona.edu/~ece369/Resources/spim/MIPSReference.pdf][arizona uni]]
@@ -39,7 +39,7 @@
 MIPS assembly was introduced in 1986 and there are different versions (I, I, ..., MIPS32, MIPS64).
 
 *** Basic Syscalls
-Full reference MIPS syscalls [[https://courses.missouristate.edu/kenvollmar/mars/help/syscallhelp.html ][link]]
+Full reference MIPS syscalls [[https://courses.missouristate.edu/kenvollmar/mars/help/syscallhelp.html][link]]
 
 *** Registers
 | Register | Number  | Usage                                 | Avoid |
