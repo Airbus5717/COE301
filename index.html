@@ -17,18 +17,19 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgdaed932">Resources</a></li>
-<li><a href="#orge49f645">MIPS assembly</a>
+<li><a href="#org5740522">Resources</a></li>
+<li><a href="#org0aa1bf2">MIPS assembly</a>
 <ul>
-<li><a href="#org9ede797">Introduction</a>
+<li><a href="#orge74abf9">Introduction</a>
 <ul>
-<li><a href="#orgd043aeb">Mars simulator Setup</a></li>
-<li><a href="#orgd303fe2">Hello, World</a></li>
-<li><a href="#org7858dc4">More about MIPS assembly</a></li>
-<li><a href="#org91d4539">Basic Syscalls</a></li>
-<li><a href="#org02bf4c0">Basic Instructions</a></li>
+<li><a href="#org0b3c449">Mars simulator Setup</a></li>
+<li><a href="#org568058a">Hello, World</a></li>
+<li><a href="#orgf76c7ce">More about MIPS assembly</a></li>
+<li><a href="#orga1083e1">Basic Syscalls</a></li>
+<li><a href="#orgb252ca5">Registers</a></li>
 </ul>
 </li>
+<li><a href="#org8229163">Useful Macros</a></li>
 </ul>
 </li>
 </ul>
@@ -42,9 +43,9 @@
 </ul>
 </blockquote>
 
-<div id="outline-container-orgdaed932" class="outline-2">
-<h2 id="orgdaed932">Resources</h2>
-<div class="outline-text-2" id="text-orgdaed932">
+<div id="outline-container-org5740522" class="outline-2">
+<h2 id="org5740522">Resources</h2>
+<div class="outline-text-2" id="text-org5740522">
 <ul class="org-ul">
 <li>Dr. Mudawar resources <a href="https://faculty.kfupm.edu.sa/coe/mudawar/coe301/lectures/index.htm">slides, examples etc.</a></li>
 <li>MIPS syscalls <a href="https://courses.missouristate.edu/kenvollmar/mars/help/syscallhelp.html%20">link</a></li>
@@ -59,17 +60,17 @@
 </div>
 </div>
 
-<div id="outline-container-orge49f645" class="outline-2">
-<h2 id="orge49f645">MIPS assembly</h2>
-<div class="outline-text-2" id="text-orge49f645">
+<div id="outline-container-org0aa1bf2" class="outline-2">
+<h2 id="org0aa1bf2">MIPS assembly</h2>
+<div class="outline-text-2" id="text-org0aa1bf2">
 </div>
-<div id="outline-container-org9ede797" class="outline-3">
-<h3 id="org9ede797">Introduction</h3>
-<div class="outline-text-3" id="text-org9ede797">
+<div id="outline-container-orge74abf9" class="outline-3">
+<h3 id="orge74abf9">Introduction</h3>
+<div class="outline-text-3" id="text-orge74abf9">
 </div>
-<div id="outline-container-orgd043aeb" class="outline-4">
-<h4 id="orgd043aeb">Mars simulator Setup</h4>
-<div class="outline-text-4" id="text-orgd043aeb">
+<div id="outline-container-org0b3c449" class="outline-4">
+<h4 id="org0b3c449">Mars simulator Setup</h4>
+<div class="outline-text-4" id="text-org0b3c449">
 <ol class="org-ol">
 <li>File (or Ctrl-N) -&gt; New File</li>
 <li>Copy paste the code below</li>
@@ -82,9 +83,9 @@
 </div>
 
 
-<div id="outline-container-orgd303fe2" class="outline-4">
-<h4 id="orgd303fe2">Hello, World</h4>
-<div class="outline-text-4" id="text-orgd303fe2">
+<div id="outline-container-org568058a" class="outline-4">
+<h4 id="org568058a">Hello, World</h4>
+<div class="outline-text-4" id="text-org568058a">
 <div class="org-src-container">
 <pre class="src src-mips"><span style="color: #928374;"># </span><span style="color: #b8bb26; font-weight: bold;">NOTE:</span><span style="color: #928374;"> Hello, World in assembly</span>
 <span style="color: #ebdbb2; font-weight: bold;">.globl</span> main
@@ -112,26 +113,184 @@
 </div>
 </div>
 
-<div id="outline-container-org7858dc4" class="outline-4">
-<h4 id="org7858dc4">More about MIPS assembly</h4>
-<div class="outline-text-4" id="text-org7858dc4">
+<div id="outline-container-orgf76c7ce" class="outline-4">
+<h4 id="orgf76c7ce">More about MIPS assembly</h4>
+<div class="outline-text-4" id="text-orgf76c7ce">
 <p>
 MIPS assembly was introduced in 1986 and there are different versions (I, I, &#x2026;, MIPS32, MIPS64).
 </p>
 </div>
 </div>
 
-<div id="outline-container-org91d4539" class="outline-4">
-<h4 id="org91d4539">Basic Syscalls</h4>
-<div class="outline-text-4" id="text-org91d4539">
+<div id="outline-container-orga1083e1" class="outline-4">
+<h4 id="orga1083e1">Basic Syscalls</h4>
+<div class="outline-text-4" id="text-orga1083e1">
 <p>
 Full reference MIPS syscalls <a href="https://courses.missouristate.edu/kenvollmar/mars/help/syscallhelp.html%20">link</a>
 </p>
 </div>
 </div>
 
-<div id="outline-container-org02bf4c0" class="outline-4">
-<h4 id="org02bf4c0">Basic Instructions</h4>
+<div id="outline-container-orgb252ca5" class="outline-4">
+<h4 id="orgb252ca5">Registers</h4>
+<div class="outline-text-4" id="text-orgb252ca5">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Register</td>
+<td class="org-left">Number</td>
+<td class="org-left">Usage</td>
+<td class="org-left">Avoid</td>
+</tr>
+
+<tr>
+<td class="org-left">$zero</td>
+<td class="org-left">$0</td>
+<td class="org-left">Always zero</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">$at</td>
+<td class="org-left">$1</td>
+<td class="org-left">Assembler temporary register</td>
+<td class="org-left">true</td>
+</tr>
+
+<tr>
+<td class="org-left">$v0-$v1</td>
+<td class="org-left">$2-$3</td>
+<td class="org-left">functions results</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">$a0-$a3</td>
+<td class="org-left">$4-$7</td>
+<td class="org-left">function arguments</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">$t0-$t7</td>
+<td class="org-left">$8-$15</td>
+<td class="org-left">for storing temp. values</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">$s0-$s7</td>
+<td class="org-left">$16-$23</td>
+<td class="org-left">storing across function calls</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">$t8-$t9</td>
+<td class="org-left">$24-$25</td>
+<td class="org-left">for storing more temp. values</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">$k0-$k1</td>
+<td class="org-left">$26-$27</td>
+<td class="org-left">for kernel os use</td>
+<td class="org-left">true</td>
+</tr>
+
+<tr>
+<td class="org-left">$gp</td>
+<td class="org-left">$28</td>
+<td class="org-left">global (data) pointer register</td>
+<td class="org-left">true</td>
+</tr>
+
+<tr>
+<td class="org-left">$sp</td>
+<td class="org-left">$29</td>
+<td class="org-left">stack pointer (points to the top)</td>
+<td class="org-left">true</td>
+</tr>
+
+<tr>
+<td class="org-left">$fp</td>
+<td class="org-left">$30</td>
+<td class="org-left">frame pointer (points to stack frame)</td>
+<td class="org-left">true</td>
+</tr>
+
+<tr>
+<td class="org-left">$ra</td>
+<td class="org-left">$31</td>
+<td class="org-left">return address (return from fn call)</td>
+<td class="org-left">true</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8229163" class="outline-3">
+<h3 id="org8229163">Useful Macros</h3>
+<div class="outline-text-3" id="text-org8229163">
+<p>
+use these to develop code faster
+</p>
+<div class="org-src-container">
+<pre class="src src-mips"><span style="color: #928374;"># </span><span style="color: #b8bb26; font-weight: bold;">NOTE:</span><span style="color: #928374;"> useful macros for general development  </span>
+
+
+<span style="color: #928374;"># </span><span style="color: #928374;">exit program</span>
+<span style="color: #928374;"># </span><span style="color: #928374;">no params required</span>
+.macro exit() 
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">10</span>
+    <span style="color: #fb4934;">syscall</span>
+.end_macro
+
+<span style="color: #928374;"># </span><span style="color: #928374;">print strings</span>
+<span style="color: #928374;"># </span><span style="color: #928374;">param(s): string address</span>
+.macro print_str(%s)
+    <span style="color: #83a598;">la</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> %s
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">4</span>
+    <span style="color: #fb4934;">syscall</span>
+.end_macro
+
+<span style="color: #928374;"># </span><span style="color: #928374;">print string literals</span>
+<span style="color: #928374;"># </span><span style="color: #928374;">param(s): string literal</span>
+.macro print_strlit(%s)
+<span style="color: #ebdbb2; font-weight: bold;">.data</span>
+<span style="color: #b8bb26;">string_pointer:</span> <span style="color: #ebdbb2; font-weight: bold;">.asciiz</span> %s
+<span style="color: #ebdbb2; font-weight: bold;">.text</span>
+    <span style="color: #83a598;">la</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> string_pointer
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">4</span>
+    <span style="color: #fb4934;">syscall</span>
+.end_macro
+
+<span style="color: #928374;"># </span><span style="color: #928374;">print int</span>
+<span style="color: #928374;"># </span><span style="color: #928374;">param(d): int register</span>
+.macro print_int(%d)
+    <span style="color: #83a598;">la</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> %d
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">1</span>
+    <span style="color: #fb4934;">syscall</span>
+.end_macro
+
+<span style="color: #928374;"># </span><span style="color: #fabd2f; font-weight: bold;">TODO:</span>
+<span style="color: #928374;"># </span><span style="color: #928374;">- for loop (maybe?)</span>
+</pre>
+</div>
 </div>
 </div>
 </div>

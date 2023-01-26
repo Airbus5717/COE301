@@ -41,4 +41,21 @@ MIPS assembly was introduced in 1986 and there are different versions (I, I, ...
 *** Basic Syscalls
 Full reference MIPS syscalls [[https://courses.missouristate.edu/kenvollmar/mars/help/syscallhelp.html ][link]]
 
-*** Basic Instructions
+*** Registers
+| Register | Number  | Usage                                 | Avoid |
+| $zero    | $0      | Always zero                           |       |
+| $at      | $1      | Assembler temporary register          | true  |
+| $v0-$v1  | $2-$3   | functions results                     |       |
+| $a0-$a3  | $4-$7   | function arguments                    |       |
+| $t0-$t7  | $8-$15  | for storing temp. values              |       |
+| $s0-$s7  | $16-$23 | storing across function calls         |       |
+| $t8-$t9  | $24-$25 | for storing more temp. values         |       |
+| $k0-$k1  | $26-$27 | for kernel os use                     | true  |
+| $gp      | $28     | global (data) pointer register        | true  |
+| $sp      | $29     | stack pointer (points to the top)     | true  |
+| $fp      | $30     | frame pointer (points to stack frame) | true  |
+| $ra      | $31     | return address (return from fn call)  | true  |
+
+** Useful Macros
+use these to develop code faster
+#+include: "./code/macros.asm" src mips
