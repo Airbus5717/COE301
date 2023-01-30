@@ -23,7 +23,7 @@ main:
     
     # print int
     li $v0, 1
-    la $a0, $s0
+    move $a0, $s0
     syscall
     
     # exit
