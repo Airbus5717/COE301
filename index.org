@@ -56,6 +56,8 @@ Full reference MIPS syscalls [[https://courses.missouristate.edu/kenvollmar/mars
 | $fp      | $30     | frame pointer (points to stack frame) | true  |
 | $ra      | $31     | return address (return from fn call)  | true  |
 
+** instructions
+[[https://uweb.engr.arizona.edu/~ece369/Resources/spim/MIPSReference.pdf][MIPS REFERENCE SHEET]]
 
 
 ** Useful Macros
