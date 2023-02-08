@@ -1,3 +1,4 @@
+# get int input and output the result
 .globl main
 .data
 str1: .asciiz "Enter an int value: "

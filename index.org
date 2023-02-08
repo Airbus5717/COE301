@@ -19,6 +19,8 @@
 - Mips assembly videos [[https://www.youtube.com/playlist?list=PL1C2GgOjAF-KYdV5bH-xzoybEHreDZ3Kh][Padraic Edgington]]
 - Mips assembly videos [[https://www.youtube.com/playlist?list=PL5b07qlmA3P6zUdDf-o97ddfpvPFuNa5A][Amell Peralta]]
 - Mips assembly Slides from oregon state uni [[https://web.engr.oregonstate.edu/~walkiner/cs271-wi13/slides/][class 2013]]
+- MIPS Manual I [[https://faculty.kfupm.edu.sa/coe/mudawar/coe301/tools_manuals/MIPS32Vol1.Architecture.pdf][MANUAL I]]
+- MIPS Manual II [[https://faculty.kfupm.edu.sa/coe/mudawar/coe301/tools_manuals/MIPS32Vol2.InstructionSet.pdf][MANUAL II]]
 -----
 
 * MIPS assembly
