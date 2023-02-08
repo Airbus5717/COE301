@@ -19,6 +19,7 @@
 - Mips assembly videos [[https://www.youtube.com/playlist?list=PL1C2GgOjAF-KYdV5bH-xzoybEHreDZ3Kh][Padraic Edgington]]
 - Mips assembly videos [[https://www.youtube.com/playlist?list=PL5b07qlmA3P6zUdDf-o97ddfpvPFuNa5A][Amell Peralta]]
 - Mips assembly Slides from oregon state uni [[https://web.engr.oregonstate.edu/~walkiner/cs271-wi13/slides/][class 2013]]
+- MIPS online editor/simulator [[https://cpulator.01xz.net/?sys=mipsr5-spim][CPULATOR]]
 - MIPS Manual I [[https://faculty.kfupm.edu.sa/coe/mudawar/coe301/tools_manuals/MIPS32Vol1.Architecture.pdf][MANUAL I]]
 - MIPS Manual II [[https://faculty.kfupm.edu.sa/coe/mudawar/coe301/tools_manuals/MIPS32Vol2.InstructionSet.pdf][MANUAL II]]
 -----
@@ -59,7 +60,9 @@ Full reference MIPS syscalls [[https://courses.missouristate.edu/kenvollmar/mars
 | $ra      | $31     | return address (return from fn call)  | true  |
 
 ** instructions
+[[https://www.dsi.unive.it/~gasparetto/materials/MIPS_Instruction_Set.pdf][SIMPLER REF SHEET]]
 [[https://uweb.engr.arizona.edu/~ece369/Resources/spim/MIPSReference.pdf][MIPS REFERENCE SHEET]]
+
 
 
 ** Useful Macros

@@ -17,20 +17,20 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgf0a0ab2">Resources</a></li>
-<li><a href="#orgd4fa3c5">MIPS assembly</a>
+<li><a href="#orgbdf2c60">Resources</a></li>
+<li><a href="#orge4b7515">MIPS assembly</a>
 <ul>
-<li><a href="#org1d19ba7">Introduction</a>
+<li><a href="#orgacf050c">Introduction</a>
 <ul>
-<li><a href="#orgc502996">Mars simulator Setup</a></li>
-<li><a href="#orgc8028ea">Hello, World</a></li>
-<li><a href="#org3b525e6">More about MIPS assembly</a></li>
-<li><a href="#orgc93f177">Basic Syscalls</a></li>
-<li><a href="#org7f824cf">Registers</a></li>
+<li><a href="#org9500475">Mars simulator Setup</a></li>
+<li><a href="#org664c76f">Hello, World</a></li>
+<li><a href="#orgab872c3">More about MIPS assembly</a></li>
+<li><a href="#orge98840d">Basic Syscalls</a></li>
+<li><a href="#org9bc70ab">Registers</a></li>
 </ul>
 </li>
-<li><a href="#orga3644a7">instructions</a></li>
-<li><a href="#org0735205">Useful Macros</a></li>
+<li><a href="#org776f79d">instructions</a></li>
+<li><a href="#org483e7d8">Useful Macros</a></li>
 </ul>
 </li>
 </ul>
@@ -44,9 +44,9 @@
 </ul>
 </blockquote>
 
-<div id="outline-container-orgf0a0ab2" class="outline-2">
-<h2 id="orgf0a0ab2">Resources</h2>
-<div class="outline-text-2" id="text-orgf0a0ab2">
+<div id="outline-container-orgbdf2c60" class="outline-2">
+<h2 id="orgbdf2c60">Resources</h2>
+<div class="outline-text-2" id="text-orgbdf2c60">
 <ul class="org-ul">
 <li>Dr. Mudawar resources <a href="https://faculty.kfupm.edu.sa/coe/mudawar/coe301/lectures/index.htm">slides, examples etc.</a></li>
 <li>MIPS syscalls <a href="https://courses.missouristate.edu/kenvollmar/mars/help/syscallhelp.html">link</a></li>
@@ -56,6 +56,7 @@
 <li>Mips assembly videos <a href="https://www.youtube.com/playlist?list=PL1C2GgOjAF-KYdV5bH-xzoybEHreDZ3Kh">Padraic Edgington</a></li>
 <li>Mips assembly videos <a href="https://www.youtube.com/playlist?list=PL5b07qlmA3P6zUdDf-o97ddfpvPFuNa5A">Amell Peralta</a></li>
 <li>Mips assembly Slides from oregon state uni <a href="https://web.engr.oregonstate.edu/~walkiner/cs271-wi13/slides/">class 2013</a></li>
+<li>MIPS online editor/simulator <a href="https://cpulator.01xz.net/?sys=mipsr5-spim">CPULATOR</a></li>
 <li>MIPS Manual I <a href="https://faculty.kfupm.edu.sa/coe/mudawar/coe301/tools_manuals/MIPS32Vol1.Architecture.pdf">MANUAL I</a></li>
 <li>MIPS Manual II <a href="https://faculty.kfupm.edu.sa/coe/mudawar/coe301/tools_manuals/MIPS32Vol2.InstructionSet.pdf">MANUAL II</a></li>
 </ul>
@@ -63,17 +64,17 @@
 </div>
 </div>
 
-<div id="outline-container-orgd4fa3c5" class="outline-2">
-<h2 id="orgd4fa3c5">MIPS assembly</h2>
-<div class="outline-text-2" id="text-orgd4fa3c5">
+<div id="outline-container-orge4b7515" class="outline-2">
+<h2 id="orge4b7515">MIPS assembly</h2>
+<div class="outline-text-2" id="text-orge4b7515">
 </div>
-<div id="outline-container-org1d19ba7" class="outline-3">
-<h3 id="org1d19ba7">Introduction</h3>
-<div class="outline-text-3" id="text-org1d19ba7">
+<div id="outline-container-orgacf050c" class="outline-3">
+<h3 id="orgacf050c">Introduction</h3>
+<div class="outline-text-3" id="text-orgacf050c">
 </div>
-<div id="outline-container-orgc502996" class="outline-4">
-<h4 id="orgc502996">Mars simulator Setup</h4>
-<div class="outline-text-4" id="text-orgc502996">
+<div id="outline-container-org9500475" class="outline-4">
+<h4 id="org9500475">Mars simulator Setup</h4>
+<div class="outline-text-4" id="text-org9500475">
 <ol class="org-ol">
 <li>File (or Ctrl-N) -&gt; New File</li>
 <li>Copy paste the code below</li>
@@ -86,9 +87,9 @@
 </div>
 
 
-<div id="outline-container-orgc8028ea" class="outline-4">
-<h4 id="orgc8028ea">Hello, World</h4>
-<div class="outline-text-4" id="text-orgc8028ea">
+<div id="outline-container-org664c76f" class="outline-4">
+<h4 id="org664c76f">Hello, World</h4>
+<div class="outline-text-4" id="text-org664c76f">
 <div class="org-src-container">
 <pre class="src src-mips"><span style="color: #928374;"># </span><span style="color: #b8bb26; font-weight: bold;">NOTE:</span><span style="color: #928374;"> Hello, World in assembly</span>
 <span style="color: #ebdbb2; font-weight: bold;">.globl</span> main
@@ -116,27 +117,27 @@
 </div>
 </div>
 
-<div id="outline-container-org3b525e6" class="outline-4">
-<h4 id="org3b525e6">More about MIPS assembly</h4>
-<div class="outline-text-4" id="text-org3b525e6">
+<div id="outline-container-orgab872c3" class="outline-4">
+<h4 id="orgab872c3">More about MIPS assembly</h4>
+<div class="outline-text-4" id="text-orgab872c3">
 <p>
 MIPS assembly was introduced in 1986 and there are different versions (I, I, &#x2026;, MIPS32, MIPS64).
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgc93f177" class="outline-4">
-<h4 id="orgc93f177">Basic Syscalls</h4>
-<div class="outline-text-4" id="text-orgc93f177">
+<div id="outline-container-orge98840d" class="outline-4">
+<h4 id="orge98840d">Basic Syscalls</h4>
+<div class="outline-text-4" id="text-orge98840d">
 <p>
 Full reference MIPS syscalls <a href="https://courses.missouristate.edu/kenvollmar/mars/help/syscallhelp.html">link</a>
 </p>
 </div>
 </div>
 
-<div id="outline-container-org7f824cf" class="outline-4">
-<h4 id="org7f824cf">Registers</h4>
-<div class="outline-text-4" id="text-org7f824cf">
+<div id="outline-container-org9bc70ab" class="outline-4">
+<h4 id="org9bc70ab">Registers</h4>
+<div class="outline-text-4" id="text-org9bc70ab">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -246,19 +247,21 @@ Full reference MIPS syscalls <a href="https://courses.missouristate.edu/kenvollm
 </div>
 </div>
 
-<div id="outline-container-orga3644a7" class="outline-3">
-<h3 id="orga3644a7">instructions</h3>
-<div class="outline-text-3" id="text-orga3644a7">
+<div id="outline-container-org776f79d" class="outline-3">
+<h3 id="org776f79d">instructions</h3>
+<div class="outline-text-3" id="text-org776f79d">
 <p>
+<a href="https://www.dsi.unive.it/~gasparetto/materials/MIPS_Instruction_Set.pdf">SIMPLER REF SHEET</a>
 <a href="https://uweb.engr.arizona.edu/~ece369/Resources/spim/MIPSReference.pdf">MIPS REFERENCE SHEET</a>
 </p>
 </div>
 </div>
 
 
-<div id="outline-container-org0735205" class="outline-3">
-<h3 id="org0735205">Useful Macros</h3>
-<div class="outline-text-3" id="text-org0735205">
+
+<div id="outline-container-org483e7d8" class="outline-3">
+<h3 id="org483e7d8">Useful Macros</h3>
+<div class="outline-text-3" id="text-org483e7d8">
 <p>
 use these to develop code faster
 </p>
