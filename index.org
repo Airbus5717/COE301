@@ -63,8 +63,17 @@ Full reference MIPS syscalls [[https://courses.missouristate.edu/kenvollmar/mars
 [[https://www.dsi.unive.it/~gasparetto/materials/MIPS_Instruction_Set.pdf][SIMPLER REF SHEET]]
 [[https://uweb.engr.arizona.edu/~ece369/Resources/spim/MIPSReference.pdf][MIPS REFERENCE SHEET]]
 
+** Labs
+If you find any errors please submit a pull request
+*** LAB 3
+**** Task1
+#+include: "./code/Lab3_Task1.asm" src mips
 
-
+**** Task2
+#+include: "./code/Lab3_Task2.asm" src mips
+*** LAB 4
+**** Task1
+#+include: "./code/Lab4_Task1.asm" src mips
 ** Useful Macros
 use these to develop code faster
 #+include: "./code/macros.asm" src mips

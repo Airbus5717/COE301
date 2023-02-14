@@ -17,20 +17,26 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgbdf2c60">Resources</a></li>
-<li><a href="#orge4b7515">MIPS assembly</a>
+<li><a href="#org8360e4f">Resources</a></li>
+<li><a href="#orgdbb877b">MIPS assembly</a>
 <ul>
-<li><a href="#orgacf050c">Introduction</a>
+<li><a href="#orgc0d9700">Introduction</a>
 <ul>
-<li><a href="#org9500475">Mars simulator Setup</a></li>
-<li><a href="#org664c76f">Hello, World</a></li>
-<li><a href="#orgab872c3">More about MIPS assembly</a></li>
-<li><a href="#orge98840d">Basic Syscalls</a></li>
-<li><a href="#org9bc70ab">Registers</a></li>
+<li><a href="#org99963ae">Mars simulator Setup</a></li>
+<li><a href="#orgaf7c50c">Hello, World</a></li>
+<li><a href="#orge03df5b">More about MIPS assembly</a></li>
+<li><a href="#org53faaf4">Basic Syscalls</a></li>
+<li><a href="#org9952cf1">Registers</a></li>
 </ul>
 </li>
-<li><a href="#org776f79d">instructions</a></li>
-<li><a href="#org483e7d8">Useful Macros</a></li>
+<li><a href="#org39fea7c">instructions</a></li>
+<li><a href="#org498f472">Labs</a>
+<ul>
+<li><a href="#org86acbbe">LAB 3</a></li>
+<li><a href="#orge48914f">LAB 4</a></li>
+</ul>
+</li>
+<li><a href="#orgfd1ee48">Useful Macros</a></li>
 </ul>
 </li>
 </ul>
@@ -44,9 +50,9 @@
 </ul>
 </blockquote>
 
-<div id="outline-container-orgbdf2c60" class="outline-2">
-<h2 id="orgbdf2c60">Resources</h2>
-<div class="outline-text-2" id="text-orgbdf2c60">
+<div id="outline-container-org8360e4f" class="outline-2">
+<h2 id="org8360e4f">Resources</h2>
+<div class="outline-text-2" id="text-org8360e4f">
 <ul class="org-ul">
 <li>Dr. Mudawar resources <a href="https://faculty.kfupm.edu.sa/coe/mudawar/coe301/lectures/index.htm">slides, examples etc.</a></li>
 <li>MIPS syscalls <a href="https://courses.missouristate.edu/kenvollmar/mars/help/syscallhelp.html">link</a></li>
@@ -64,17 +70,17 @@
 </div>
 </div>
 
-<div id="outline-container-orge4b7515" class="outline-2">
-<h2 id="orge4b7515">MIPS assembly</h2>
-<div class="outline-text-2" id="text-orge4b7515">
+<div id="outline-container-orgdbb877b" class="outline-2">
+<h2 id="orgdbb877b">MIPS assembly</h2>
+<div class="outline-text-2" id="text-orgdbb877b">
 </div>
-<div id="outline-container-orgacf050c" class="outline-3">
-<h3 id="orgacf050c">Introduction</h3>
-<div class="outline-text-3" id="text-orgacf050c">
+<div id="outline-container-orgc0d9700" class="outline-3">
+<h3 id="orgc0d9700">Introduction</h3>
+<div class="outline-text-3" id="text-orgc0d9700">
 </div>
-<div id="outline-container-org9500475" class="outline-4">
-<h4 id="org9500475">Mars simulator Setup</h4>
-<div class="outline-text-4" id="text-org9500475">
+<div id="outline-container-org99963ae" class="outline-4">
+<h4 id="org99963ae">Mars simulator Setup</h4>
+<div class="outline-text-4" id="text-org99963ae">
 <ol class="org-ol">
 <li>File (or Ctrl-N) -&gt; New File</li>
 <li>Copy paste the code below</li>
@@ -87,9 +93,9 @@
 </div>
 
 
-<div id="outline-container-org664c76f" class="outline-4">
-<h4 id="org664c76f">Hello, World</h4>
-<div class="outline-text-4" id="text-org664c76f">
+<div id="outline-container-orgaf7c50c" class="outline-4">
+<h4 id="orgaf7c50c">Hello, World</h4>
+<div class="outline-text-4" id="text-orgaf7c50c">
 <div class="org-src-container">
 <pre class="src src-mips"><span style="color: #928374;"># </span><span style="color: #b8bb26; font-weight: bold;">NOTE:</span><span style="color: #928374;"> Hello, World in assembly</span>
 <span style="color: #ebdbb2; font-weight: bold;">.globl</span> main
@@ -117,27 +123,27 @@
 </div>
 </div>
 
-<div id="outline-container-orgab872c3" class="outline-4">
-<h4 id="orgab872c3">More about MIPS assembly</h4>
-<div class="outline-text-4" id="text-orgab872c3">
+<div id="outline-container-orge03df5b" class="outline-4">
+<h4 id="orge03df5b">More about MIPS assembly</h4>
+<div class="outline-text-4" id="text-orge03df5b">
 <p>
 MIPS assembly was introduced in 1986 and there are different versions (I, I, &#x2026;, MIPS32, MIPS64).
 </p>
 </div>
 </div>
 
-<div id="outline-container-orge98840d" class="outline-4">
-<h4 id="orge98840d">Basic Syscalls</h4>
-<div class="outline-text-4" id="text-orge98840d">
+<div id="outline-container-org53faaf4" class="outline-4">
+<h4 id="org53faaf4">Basic Syscalls</h4>
+<div class="outline-text-4" id="text-org53faaf4">
 <p>
 Full reference MIPS syscalls <a href="https://courses.missouristate.edu/kenvollmar/mars/help/syscallhelp.html">link</a>
 </p>
 </div>
 </div>
 
-<div id="outline-container-org9bc70ab" class="outline-4">
-<h4 id="org9bc70ab">Registers</h4>
-<div class="outline-text-4" id="text-org9bc70ab">
+<div id="outline-container-org9952cf1" class="outline-4">
+<h4 id="org9952cf1">Registers</h4>
+<div class="outline-text-4" id="text-org9952cf1">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -247,9 +253,9 @@ Full reference MIPS syscalls <a href="https://courses.missouristate.edu/kenvollm
 </div>
 </div>
 
-<div id="outline-container-org776f79d" class="outline-3">
-<h3 id="org776f79d">instructions</h3>
-<div class="outline-text-3" id="text-org776f79d">
+<div id="outline-container-org39fea7c" class="outline-3">
+<h3 id="org39fea7c">instructions</h3>
+<div class="outline-text-3" id="text-org39fea7c">
 <p>
 <a href="https://www.dsi.unive.it/~gasparetto/materials/MIPS_Instruction_Set.pdf">SIMPLER REF SHEET</a>
 <a href="https://uweb.engr.arizona.edu/~ece369/Resources/spim/MIPSReference.pdf">MIPS REFERENCE SHEET</a>
@@ -257,11 +263,225 @@ Full reference MIPS syscalls <a href="https://courses.missouristate.edu/kenvollm
 </div>
 </div>
 
+<div id="outline-container-org498f472" class="outline-3">
+<h3 id="org498f472">Labs</h3>
+<div class="outline-text-3" id="text-org498f472">
+<p>
+If you find any errors please submit a pull request
+</p>
+</div>
+<div id="outline-container-org86acbbe" class="outline-4">
+<h4 id="org86acbbe">LAB 3</h4>
+<div class="outline-text-4" id="text-org86acbbe">
+</div>
+<ul class="org-ul">
+<li><a id="orgaa503a8"></a>Task1<br />
+<div class="outline-text-5" id="text-orgaa503a8">
+<div class="org-src-container">
+<pre class="src src-mips"><span style="color: #928374;"># </span><span style="color: #928374;">task1</span>
+<span style="color: #928374;"># </span><span style="color: #928374;">get integer input </span>
+<span style="color: #928374;"># </span><span style="color: #928374;">multiply with 53.125 </span>
+<span style="color: #928374;"># </span><span style="color: #928374;">print result</span>
+
+<span style="color: #ebdbb2; font-weight: bold;">.globl</span> main
+
+<span style="color: #ebdbb2; font-weight: bold;">.data</span>
+<span style="color: #b8bb26;">msg1:</span> <span style="color: #ebdbb2; font-weight: bold;">.asciiz</span> <span style="color: #b8bb26;">"Enter x: "</span>
+<span style="color: #b8bb26;">msg2:</span> <span style="color: #ebdbb2; font-weight: bold;">.asciiz</span> <span style="color: #b8bb26;">"y = "</span>
+
+<span style="color: #ebdbb2; font-weight: bold;">.text</span>
+<span style="color: #b8bb26;">main:</span> 
+    <span style="color: #928374;"># </span><span style="color: #928374;">print string input prompt</span>
+    <span style="color: #83a598;">la</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> msg1
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">4</span>
+    <span style="color: #fb4934;">syscall</span>
+
+    <span style="color: #928374;"># </span><span style="color: #928374;">read integer to $t0</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">5</span>
+    <span style="color: #fb4934;">syscall</span>
+    <span style="color: #83a598;">move</span> <span style="color: #fabd2f;">$t0</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$v0</span>
+
+    <span style="color: #928374;"># </span><span style="color: #928374;">.125 = x/8 = x &gt;&gt; 3</span>
+    <span style="color: #fb4934;">sra</span> <span style="color: #fabd2f;">$t1</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">3</span> 
+    
+
+    <span style="color: #928374;"># </span><span style="color: #928374;">53 = 32 + 16 + 4 + 1  </span>
+    <span style="color: #fb4934;">sll</span> <span style="color: #fabd2f;">$t2</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">5</span> <span style="color: #928374;"># </span><span style="color: #928374;">32x </span>
+    <span style="color: #fb4934;">sll</span> <span style="color: #fabd2f;">$t3</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">4</span> <span style="color: #928374;"># </span><span style="color: #928374;">16x </span>
+    <span style="color: #fb4934;">sll</span> <span style="color: #fabd2f;">$t4</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">2</span> <span style="color: #928374;"># </span><span style="color: #928374;">4x</span>
+
+    <span style="color: #928374;"># </span><span style="color: #928374;">add results to $t0</span>
+    <span style="color: #fb4934;">add</span> <span style="color: #fabd2f;">$t0</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t0</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t1</span> <span style="color: #928374;"># </span><span style="color: #928374;">adds the 1x + .125x</span>
+    <span style="color: #fb4934;">add</span> <span style="color: #fabd2f;">$t0</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t0</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t2</span> <span style="color: #928374;"># </span><span style="color: #928374;">+= 32x</span>
+    <span style="color: #fb4934;">add</span> <span style="color: #fabd2f;">$t0</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t0</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t3</span> <span style="color: #928374;"># </span><span style="color: #928374;">+= 16x</span>
+    <span style="color: #fb4934;">add</span> <span style="color: #fabd2f;">$t0</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t0</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t4</span> <span style="color: #928374;"># </span><span style="color: #928374;">+= 4x</span>
+
+    <span style="color: #928374;"># </span><span style="color: #928374;">print string output prompt</span>
+    <span style="color: #83a598;">li</span>  <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">4</span>
+    <span style="color: #83a598;">la</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> msg2
+    <span style="color: #fb4934;">syscall</span>
+
+    <span style="color: #928374;"># </span><span style="color: #928374;">print result (result is already in $a0)</span>
+    <span style="color: #83a598;">move</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t0</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">1</span>
+    <span style="color: #fb4934;">syscall</span>
+
+    <span style="color: #928374;"># </span><span style="color: #928374;">exit</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">10</span>
+    <span style="color: #fb4934;">syscall</span>
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="orgf574f4f"></a>Task2<br />
+<div class="outline-text-5" id="text-orgf574f4f">
+<div class="org-src-container">
+<pre class="src src-mips"><span style="color: #928374;"># </span><span style="color: #928374;">task2 </span>
+<span style="color: #928374;"># </span><span style="color: #928374;">get an integer input </span>
+<span style="color: #928374;"># </span><span style="color: #928374;">set bit 11 and 17 to 1 </span>
+<span style="color: #928374;"># </span><span style="color: #928374;">print the result integer</span>
+
+<span style="color: #ebdbb2; font-weight: bold;">.globl</span> main
+
+<span style="color: #ebdbb2; font-weight: bold;">.data</span>
+<span style="color: #b8bb26;">msg1:</span> <span style="color: #ebdbb2; font-weight: bold;">.asciiz</span> <span style="color: #b8bb26;">"Enter a: "</span>
+<span style="color: #b8bb26;">msg2:</span> <span style="color: #ebdbb2; font-weight: bold;">.asciiz</span> <span style="color: #b8bb26;">"Result = "</span>
+
+<span style="color: #ebdbb2; font-weight: bold;">.text</span>
+<span style="color: #b8bb26;">main:</span> 
+    <span style="color: #928374;"># </span><span style="color: #928374;">print string input prompt</span>
+    <span style="color: #83a598;">la</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> msg1
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">4</span>
+    <span style="color: #fb4934;">syscall</span>
+
+    <span style="color: #928374;"># </span><span style="color: #928374;">read integer to $t0</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">5</span>
+    <span style="color: #fb4934;">syscall</span>
+    <span style="color: #83a598;">move</span> <span style="color: #fabd2f;">$t0</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$v0</span>
+
+    <span style="color: #928374;"># </span><span style="color: #928374;">set bit 11 and 17 to 1</span>
+    <span style="color: #928374;"># </span><span style="color: #928374;">by ORing with a zeroed number except the</span>
+    <span style="color: #928374;"># </span><span style="color: #928374;">bit locations</span>
+    <span style="color: #fb4934;">ori</span> <span style="color: #fabd2f;">$t0</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">133120</span>
+
+    <span style="color: #928374;"># </span><span style="color: #928374;">print string output prompt</span>
+    <span style="color: #83a598;">li</span>  <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">4</span>
+    <span style="color: #83a598;">la</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> msg2
+    <span style="color: #fb4934;">syscall</span>
+
+    <span style="color: #928374;"># </span><span style="color: #928374;">print result (result is already in $a0)</span>
+    <span style="color: #83a598;">move</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t0</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">1</span>
+    <span style="color: #fb4934;">syscall</span>
+
+    <span style="color: #928374;"># </span><span style="color: #928374;">exit</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">10</span>
+    <span style="color: #fb4934;">syscall</span>
+</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-orge48914f" class="outline-4">
+<h4 id="orge48914f">LAB 4</h4>
+<div class="outline-text-4" id="text-orge48914f">
+</div>
+<ul class="org-ul">
+<li><a id="org36fcdbd"></a>Task1<br />
+<div class="outline-text-5" id="text-org36fcdbd">
+<div class="org-src-container">
+<pre class="src src-mips"><span style="color: #ebdbb2; font-weight: bold;">.globl</span> main
+
+<span style="color: #ebdbb2; font-weight: bold;">.data</span> 
+<span style="color: #b8bb26;">msg:</span> <span style="color: #ebdbb2; font-weight: bold;">.asciiz</span> <span style="color: #b8bb26;">"Enter a character: "</span>
+<span style="color: #b8bb26;">newline:</span> <span style="color: #ebdbb2; font-weight: bold;">.asciiz</span> <span style="color: #b8bb26;">"\n"</span>
+<span style="color: #b8bb26;">lower:</span> <span style="color: #ebdbb2; font-weight: bold;">.asciiz</span> <span style="color: #b8bb26;">"Lowercase"</span>
+<span style="color: #b8bb26;">upper:</span> <span style="color: #ebdbb2; font-weight: bold;">.asciiz</span> <span style="color: #b8bb26;">"Uppercase"</span>
+<span style="color: #b8bb26;">digit:</span> <span style="color: #ebdbb2; font-weight: bold;">.asciiz</span> <span style="color: #b8bb26;">"Digit"</span> 
+<span style="color: #b8bb26;">special:</span> <span style="color: #ebdbb2; font-weight: bold;">.asciiz</span> <span style="color: #b8bb26;">"Special Character"</span>
 
 
-<div id="outline-container-org483e7d8" class="outline-3">
-<h3 id="org483e7d8">Useful Macros</h3>
-<div class="outline-text-3" id="text-org483e7d8">
+<span style="color: #ebdbb2; font-weight: bold;">.text</span> 
+<span style="color: #928374;"># </span><span style="color: #928374;">psuedo code </span>
+<span style="color: #928374;"># </span><span style="color: #928374;">if ('a' &lt;= c &amp;&amp; 'z' &gt;= c) return lower;</span>
+<span style="color: #928374;"># </span><span style="color: #928374;">if ('A' &lt;= c &amp;&amp; 'Z' &gt;= c) return upper;</span>
+<span style="color: #928374;"># </span><span style="color: #928374;">if ('0'&lt;= c &amp;&amp; '9' &gt;= c) return digit; </span>
+<span style="color: #928374;"># </span><span style="color: #928374;">return special;</span>
+
+<span style="color: #b8bb26;">main:</span>
+    <span style="color: #83a598;">la</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> msg
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">4</span> 
+    <span style="color: #fb4934;">syscall</span> 
+    
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">12</span>  
+    <span style="color: #fb4934;">syscall</span>
+    <span style="color: #83a598;">move</span> <span style="color: #fabd2f;">$t0</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$v0</span> <span style="color: #928374;"># </span><span style="color: #928374;">store </span>
+    
+    <span style="color: #928374;"># </span><span style="color: #928374;">print newline </span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">4</span> 
+    <span style="color: #83a598;">la</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> newline
+    <span style="color: #fb4934;">syscall</span>
+
+<span style="color: #928374;"># </span><span style="color: #928374;">c is t0   </span>
+<span style="color: #928374;"># </span><span style="color: #928374;">if ('a' &lt;= c &amp;&amp; 'z' &gt;= c) return lower;</span>
+    <span style="color: #83a598;">bge</span> <span style="color: #fabd2f;">$t0</span><span style="color: #fe8019;">,</span> 'a'<span style="color: #fe8019;">,</span> lower2
+    <span style="color: #fb4934;">j</span> upper1
+<span style="color: #b8bb26;">lower2:</span> 
+    <span style="color: #83a598;">ble</span> <span style="color: #fabd2f;">$t0</span><span style="color: #fe8019;">,</span> 'z'<span style="color: #fe8019;">,</span> print_lower 
+    
+<span style="color: #928374;"># </span><span style="color: #928374;">if ('A' &lt;= c &amp;&amp; 'Z' &gt;= c) return upper;</span>
+<span style="color: #b8bb26;">upper1:</span> 
+    <span style="color: #83a598;">bge</span> <span style="color: #fabd2f;">$t0</span><span style="color: #fe8019;">,</span> 'A'<span style="color: #fe8019;">,</span> upper2
+    <span style="color: #fb4934;">j</span> digit1
+<span style="color: #b8bb26;">upper2:</span> 
+    <span style="color: #83a598;">ble</span> <span style="color: #fabd2f;">$t0</span><span style="color: #fe8019;">,</span> 'Z'<span style="color: #fe8019;">,</span> print_upper 
+    
+<span style="color: #928374;"># </span><span style="color: #928374;">if ('0'&lt;= c &amp;&amp; '9' &gt;= c) return digit; </span>
+<span style="color: #b8bb26;">digit1:</span> 
+    <span style="color: #83a598;">bge</span> <span style="color: #fabd2f;">$t0</span><span style="color: #fe8019;">,</span> '<span style="color: #d3869b; font-weight: bold;">0</span>'<span style="color: #fe8019;">,</span> digit2
+    <span style="color: #fb4934;">j</span> print_special
+<span style="color: #b8bb26;">digit2:</span> 
+    <span style="color: #83a598;">ble</span> <span style="color: #fabd2f;">$t0</span><span style="color: #fe8019;">,</span> '<span style="color: #d3869b; font-weight: bold;">9</span>'<span style="color: #fe8019;">,</span> print_digit
+<span style="color: #928374;"># </span><span style="color: #928374;">else all are special;</span>
+    <span style="color: #fb4934;">j</span> print_special 
+    
+<span style="color: #928374;"># </span><span style="color: #928374;">load the specific string for output prompt        </span>
+<span style="color: #b8bb26;">print_lower:</span> 
+    <span style="color: #83a598;">la</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> lower 
+    <span style="color: #fb4934;">j</span> done_load
+    
+<span style="color: #b8bb26;">print_upper:</span> 
+    <span style="color: #83a598;">la</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> upper   
+    <span style="color: #fb4934;">j</span> done_load
+    
+<span style="color: #b8bb26;">print_digit:</span> 
+    <span style="color: #83a598;">la</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> digit 
+    <span style="color: #fb4934;">j</span> done_load
+
+<span style="color: #b8bb26;">print_special:</span> 
+    <span style="color: #83a598;">la</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> special 
+    <span style="color: #fb4934;">j</span> done_load 
+    
+<span style="color: #b8bb26;">done_load:</span> 
+    <span style="color: #928374;"># </span><span style="color: #928374;">print preloaded string address</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">4</span> 
+    <span style="color: #fb4934;">syscall</span>
+    
+    <span style="color: #928374;"># </span><span style="color: #928374;">exit</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">10</span> 
+    <span style="color: #fb4934;">syscall</span> 
+</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgfd1ee48" class="outline-3">
+<h3 id="orgfd1ee48">Useful Macros</h3>
+<div class="outline-text-3" id="text-orgfd1ee48">
 <p>
 use these to develop code faster
 </p>
