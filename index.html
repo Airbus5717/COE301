@@ -17,26 +17,27 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org8360e4f">Resources</a></li>
-<li><a href="#orgdbb877b">MIPS assembly</a>
+<li><a href="#orge02d891">Resources</a></li>
+<li><a href="#org21a0598">MIPS assembly</a>
 <ul>
-<li><a href="#orgc0d9700">Introduction</a>
+<li><a href="#org47e7dd7">Introduction</a>
 <ul>
-<li><a href="#org99963ae">Mars simulator Setup</a></li>
-<li><a href="#orgaf7c50c">Hello, World</a></li>
-<li><a href="#orge03df5b">More about MIPS assembly</a></li>
-<li><a href="#org53faaf4">Basic Syscalls</a></li>
-<li><a href="#org9952cf1">Registers</a></li>
+<li><a href="#orgb8fe4e1">Mars simulator Setup</a></li>
+<li><a href="#orgf719e9b">Hello, World</a></li>
+<li><a href="#org2b0c7c6">More about MIPS assembly</a></li>
+<li><a href="#orgf14c35f">Basic Syscalls</a></li>
+<li><a href="#orgce3e756">Registers</a></li>
 </ul>
 </li>
-<li><a href="#org39fea7c">instructions</a></li>
-<li><a href="#org498f472">Labs</a>
+<li><a href="#org2f131af">instructions</a></li>
+<li><a href="#org0f7a16f">Labs</a>
 <ul>
-<li><a href="#org86acbbe">LAB 3</a></li>
-<li><a href="#orge48914f">LAB 4</a></li>
+<li><a href="#org955b115">LAB 3</a></li>
+<li><a href="#org31ec7b0">LAB 4</a></li>
+<li><a href="#org5b7f456">LAB 5</a></li>
 </ul>
 </li>
-<li><a href="#orgfd1ee48">Useful Macros</a></li>
+<li><a href="#org56a717e">Useful Macros</a></li>
 </ul>
 </li>
 </ul>
@@ -50,9 +51,9 @@
 </ul>
 </blockquote>
 
-<div id="outline-container-org8360e4f" class="outline-2">
-<h2 id="org8360e4f">Resources</h2>
-<div class="outline-text-2" id="text-org8360e4f">
+<div id="outline-container-orge02d891" class="outline-2">
+<h2 id="orge02d891">Resources</h2>
+<div class="outline-text-2" id="text-orge02d891">
 <ul class="org-ul">
 <li>Dr. Mudawar resources <a href="https://faculty.kfupm.edu.sa/coe/mudawar/coe301/lectures/index.htm">slides, examples etc.</a></li>
 <li>MIPS syscalls <a href="https://courses.missouristate.edu/kenvollmar/mars/help/syscallhelp.html">link</a></li>
@@ -70,17 +71,17 @@
 </div>
 </div>
 
-<div id="outline-container-orgdbb877b" class="outline-2">
-<h2 id="orgdbb877b">MIPS assembly</h2>
-<div class="outline-text-2" id="text-orgdbb877b">
+<div id="outline-container-org21a0598" class="outline-2">
+<h2 id="org21a0598">MIPS assembly</h2>
+<div class="outline-text-2" id="text-org21a0598">
 </div>
-<div id="outline-container-orgc0d9700" class="outline-3">
-<h3 id="orgc0d9700">Introduction</h3>
-<div class="outline-text-3" id="text-orgc0d9700">
+<div id="outline-container-org47e7dd7" class="outline-3">
+<h3 id="org47e7dd7">Introduction</h3>
+<div class="outline-text-3" id="text-org47e7dd7">
 </div>
-<div id="outline-container-org99963ae" class="outline-4">
-<h4 id="org99963ae">Mars simulator Setup</h4>
-<div class="outline-text-4" id="text-org99963ae">
+<div id="outline-container-orgb8fe4e1" class="outline-4">
+<h4 id="orgb8fe4e1">Mars simulator Setup</h4>
+<div class="outline-text-4" id="text-orgb8fe4e1">
 <ol class="org-ol">
 <li>File (or Ctrl-N) -&gt; New File</li>
 <li>Copy paste the code below</li>
@@ -93,9 +94,9 @@
 </div>
 
 
-<div id="outline-container-orgaf7c50c" class="outline-4">
-<h4 id="orgaf7c50c">Hello, World</h4>
-<div class="outline-text-4" id="text-orgaf7c50c">
+<div id="outline-container-orgf719e9b" class="outline-4">
+<h4 id="orgf719e9b">Hello, World</h4>
+<div class="outline-text-4" id="text-orgf719e9b">
 <div class="org-src-container">
 <pre class="src src-mips"><span style="color: #928374;"># </span><span style="color: #b8bb26; font-weight: bold;">NOTE:</span><span style="color: #928374;"> Hello, World in assembly</span>
 <span style="color: #ebdbb2; font-weight: bold;">.globl</span> main
@@ -123,27 +124,27 @@
 </div>
 </div>
 
-<div id="outline-container-orge03df5b" class="outline-4">
-<h4 id="orge03df5b">More about MIPS assembly</h4>
-<div class="outline-text-4" id="text-orge03df5b">
+<div id="outline-container-org2b0c7c6" class="outline-4">
+<h4 id="org2b0c7c6">More about MIPS assembly</h4>
+<div class="outline-text-4" id="text-org2b0c7c6">
 <p>
 MIPS assembly was introduced in 1986 and there are different versions (I, I, &#x2026;, MIPS32, MIPS64).
 </p>
 </div>
 </div>
 
-<div id="outline-container-org53faaf4" class="outline-4">
-<h4 id="org53faaf4">Basic Syscalls</h4>
-<div class="outline-text-4" id="text-org53faaf4">
+<div id="outline-container-orgf14c35f" class="outline-4">
+<h4 id="orgf14c35f">Basic Syscalls</h4>
+<div class="outline-text-4" id="text-orgf14c35f">
 <p>
 Full reference MIPS syscalls <a href="https://courses.missouristate.edu/kenvollmar/mars/help/syscallhelp.html">link</a>
 </p>
 </div>
 </div>
 
-<div id="outline-container-org9952cf1" class="outline-4">
-<h4 id="org9952cf1">Registers</h4>
-<div class="outline-text-4" id="text-org9952cf1">
+<div id="outline-container-orgce3e756" class="outline-4">
+<h4 id="orgce3e756">Registers</h4>
+<div class="outline-text-4" id="text-orgce3e756">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -253,9 +254,9 @@ Full reference MIPS syscalls <a href="https://courses.missouristate.edu/kenvollm
 </div>
 </div>
 
-<div id="outline-container-org39fea7c" class="outline-3">
-<h3 id="org39fea7c">instructions</h3>
-<div class="outline-text-3" id="text-org39fea7c">
+<div id="outline-container-org2f131af" class="outline-3">
+<h3 id="org2f131af">instructions</h3>
+<div class="outline-text-3" id="text-org2f131af">
 <p>
 <a href="https://www.dsi.unive.it/~gasparetto/materials/MIPS_Instruction_Set.pdf">SIMPLER REF SHEET</a>
 <a href="https://uweb.engr.arizona.edu/~ece369/Resources/spim/MIPSReference.pdf">MIPS REFERENCE SHEET</a>
@@ -263,20 +264,20 @@ Full reference MIPS syscalls <a href="https://courses.missouristate.edu/kenvollm
 </div>
 </div>
 
-<div id="outline-container-org498f472" class="outline-3">
-<h3 id="org498f472">Labs</h3>
-<div class="outline-text-3" id="text-org498f472">
+<div id="outline-container-org0f7a16f" class="outline-3">
+<h3 id="org0f7a16f">Labs</h3>
+<div class="outline-text-3" id="text-org0f7a16f">
 <p>
 If you find any errors please submit a pull request
 </p>
 </div>
-<div id="outline-container-org86acbbe" class="outline-4">
-<h4 id="org86acbbe">LAB 3</h4>
-<div class="outline-text-4" id="text-org86acbbe">
+<div id="outline-container-org955b115" class="outline-4">
+<h4 id="org955b115">LAB 3</h4>
+<div class="outline-text-4" id="text-org955b115">
 </div>
 <ul class="org-ul">
-<li><a id="orgaa503a8"></a>Task1<br />
-<div class="outline-text-5" id="text-orgaa503a8">
+<li><a id="orge72cf5e"></a>Task1<br />
+<div class="outline-text-5" id="text-orge72cf5e">
 <div class="org-src-container">
 <pre class="src src-mips"><span style="color: #928374;"># </span><span style="color: #928374;">task1</span>
 <span style="color: #928374;"># </span><span style="color: #928374;">get integer input </span>
@@ -334,8 +335,8 @@ If you find any errors please submit a pull request
 </div>
 </li>
 
-<li><a id="orgf574f4f"></a>Task2<br />
-<div class="outline-text-5" id="text-orgf574f4f">
+<li><a id="org8691017"></a>Task2<br />
+<div class="outline-text-5" id="text-org8691017">
 <div class="org-src-container">
 <pre class="src src-mips"><span style="color: #928374;"># </span><span style="color: #928374;">task2 </span>
 <span style="color: #928374;"># </span><span style="color: #928374;">get an integer input </span>
@@ -384,13 +385,13 @@ If you find any errors please submit a pull request
 </li>
 </ul>
 </div>
-<div id="outline-container-orge48914f" class="outline-4">
-<h4 id="orge48914f">LAB 4</h4>
-<div class="outline-text-4" id="text-orge48914f">
+<div id="outline-container-org31ec7b0" class="outline-4">
+<h4 id="org31ec7b0">LAB 4</h4>
+<div class="outline-text-4" id="text-org31ec7b0">
 </div>
 <ul class="org-ul">
-<li><a id="org36fcdbd"></a>Task1<br />
-<div class="outline-text-5" id="text-org36fcdbd">
+<li><a id="org66f7d3d"></a>Task1<br />
+<div class="outline-text-5" id="text-org66f7d3d">
 <div class="org-src-container">
 <pre class="src src-mips"><span style="color: #ebdbb2; font-weight: bold;">.globl</span> main
 
@@ -478,10 +479,330 @@ If you find any errors please submit a pull request
 </li>
 </ul>
 </div>
+
+<div id="outline-container-org5b7f456" class="outline-4">
+<h4 id="org5b7f456">LAB 5</h4>
+<div class="outline-text-4" id="text-org5b7f456">
 </div>
-<div id="outline-container-orgfd1ee48" class="outline-3">
-<h3 id="orgfd1ee48">Useful Macros</h3>
-<div class="outline-text-3" id="text-orgfd1ee48">
+<ul class="org-ul">
+<li><a id="org88f8874"></a>Task1<br />
+<div class="outline-text-5" id="text-org88f8874">
+<div class="org-src-container">
+<pre class="src src-mips"><span style="color: #928374;"># </span><span style="color: #928374;">TASK1</span>
+
+<span style="color: #928374;"># </span><span style="color: #928374;">Write a MIPS assembly program that</span>
+<span style="color: #928374;"># </span><span style="color: #928374;">reads the size (n) of the message from</span>
+<span style="color: #928374;"># </span><span style="color: #928374;">the user. Then, the program allocates</span>
+<span style="color: #928374;"># </span><span style="color: #928374;">(n+1) bytes in the heap. After that, read</span>
+<span style="color: #928374;"># </span><span style="color: #928374;">a string of n characters from the user</span>
+<span style="color: #928374;"># </span><span style="color: #928374;">he/she wishes to encrypt. Next, read</span>
+<span style="color: #928374;"># </span><span style="color: #928374;">an encrypting key (e) from the user </span>
+<span style="color: #928374;"># </span><span style="color: #928374;">Encrypt the original string with the</span>
+<span style="color: #928374;"># </span><span style="color: #928374;">encryption key using the following code.</span>
+<span style="color: #928374;"># </span><span style="color: #928374;">Finally, print out the encrypted string.</span>
+<span style="color: #928374;"># </span>
+<span style="color: #928374;">#</span>
+<span style="color: #928374;">#</span>
+
+<span style="color: #ebdbb2; font-weight: bold;">.globl</span> main
+
+<span style="color: #ebdbb2; font-weight: bold;">.data</span> 
+<span style="color: #b8bb26;">msg1:</span> <span style="color: #ebdbb2; font-weight: bold;">.asciiz</span> <span style="color: #b8bb26;">"Enter n: "</span>
+<span style="color: #b8bb26;">msg2:</span> <span style="color: #ebdbb2; font-weight: bold;">.asciiz</span> <span style="color: #b8bb26;">"Enter string: "</span>
+<span style="color: #b8bb26;">msg3:</span> <span style="color: #ebdbb2; font-weight: bold;">.asciiz</span> <span style="color: #b8bb26;">"Enter e: "</span>
+<span style="color: #b8bb26;">msg4:</span> <span style="color: #ebdbb2; font-weight: bold;">.asciiz</span> <span style="color: #b8bb26;">"Encrypted string = "</span>
+
+
+<span style="color: #ebdbb2; font-weight: bold;">.text</span>
+<span style="color: #928374;"># </span><span style="color: #928374;">$t0 will hold the n </span>
+<span style="color: #928374;"># </span><span style="color: #928374;">$t1 will hold the e </span>
+<span style="color: #928374;"># </span><span style="color: #928374;">$t2 is the temp `ch` variable</span>
+<span style="color: #928374;"># </span><span style="color: #928374;">$t3 is the address of the string</span>
+<span style="color: #928374;"># </span><span style="color: #928374;">$t4 is the index in loop</span>
+
+
+
+<span style="color: #b8bb26;">main:</span>
+    <span style="color: #928374;"># </span><span style="color: #928374;">print string input prompt</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">4</span> 
+    <span style="color: #83a598;">la</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> msg1
+    <span style="color: #fb4934;">syscall</span>
+    
+    <span style="color: #928374;"># </span><span style="color: #928374;">$t0 &lt;- ask for integer input </span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">5</span>
+    <span style="color: #fb4934;">syscall</span>
+    <span style="color: #83a598;">move</span> <span style="color: #fabd2f;">$t0</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$v0</span>
+    
+    <span style="color: #928374;"># </span><span style="color: #928374;">print string input prompt for string</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">4</span> 
+    <span style="color: #83a598;">la</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> msg2
+    <span style="color: #fb4934;">syscall</span>
+    
+    <span style="color: #928374;"># </span><span style="color: #928374;">malloc((n | $t0)+1)</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">9</span>
+    <span style="color: #fb4934;">addiu</span> <span style="color: #fabd2f;">$t0</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">1</span> <span style="color: #928374;"># </span><span style="color: #928374;">n++</span>
+    <span style="color: #83a598;">move</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t0</span> <span style="color: #928374;"># </span><span style="color: #928374;">load memory size</span>
+    <span style="color: #fb4934;">syscall</span> 
+    <span style="color: #83a598;">move</span> <span style="color: #fabd2f;">$t3</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$v0</span>
+    
+    <span style="color: #928374;"># </span><span style="color: #928374;">read string to memory</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">8</span>
+    <span style="color: #83a598;">move</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t3</span>
+    <span style="color: #83a598;">move</span> <span style="color: #fabd2f;">$a1</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t0</span> 
+    <span style="color: #fb4934;">syscall</span>
+    
+    <span style="color: #928374;"># </span><span style="color: #928374;">print newline</span>
+    <span style="color: #928374;">#</span><span style="color: #928374;">li $v0, 11</span>
+    <span style="color: #928374;">#</span><span style="color: #928374;">li $a0, '\n'</span>
+    <span style="color: #928374;">#</span><span style="color: #928374;">syscall  </span>
+    
+    
+    <span style="color: #928374;"># </span><span style="color: #928374;">print string input prompt </span>
+    <span style="color: #928374;"># </span><span style="color: #928374;">for encrypt key</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">4</span> 
+    <span style="color: #83a598;">la</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> msg3
+    <span style="color: #fb4934;">syscall</span>
+    
+    <span style="color: #928374;"># </span><span style="color: #928374;">input encryption key</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">5</span> 
+    <span style="color: #fb4934;">syscall</span> 
+    <span style="color: #83a598;">move</span> <span style="color: #fabd2f;">$t1</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$v0</span>
+    
+    
+    
+    
+<span style="color: #928374;"># </span><span style="color: #928374;">$t0 will hold the n </span>
+<span style="color: #928374;"># </span><span style="color: #928374;">$t1 will hold the e </span>
+<span style="color: #928374;"># </span><span style="color: #928374;">$t2 is the temp `ch` variable</span>
+<span style="color: #928374;"># </span><span style="color: #928374;">$t3 is the address of the string</span>
+<span style="color: #928374;"># </span><span style="color: #928374;">$t4 is the index in loop</span>
+<span style="color: #928374;"># </span><span style="color: #928374;">$t5 pointer to indexed char</span>
+    <span style="color: #928374;"># </span><span style="color: #928374;">PROGRAM BODY </span>
+    <span style="color: #928374;"># </span><span style="color: #928374;">foreach (i; 0..&lt;n) {</span>
+    <span style="color: #928374;">#   </span>
+    <span style="color: #928374;"># </span><span style="color: #928374;">}</span>
+    <span style="color: #83a598;">move</span> <span style="color: #fabd2f;">$t5</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t3</span> <span style="color: #928374;"># </span><span style="color: #928374;">t5 = &amp;str[0]</span>
+    <span style="color: #83a598;">move</span> <span style="color: #fabd2f;">$t4</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$0</span> <span style="color: #928374;"># </span><span style="color: #928374;">i=0 </span>
+<span style="color: #b8bb26;">loop_body:</span>
+    <span style="color: #fb4934;">lbu</span> <span style="color: #fabd2f;">$t2</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">0</span>(<span style="color: #fabd2f;">$t5</span>) <span style="color: #928374;"># </span><span style="color: #928374;">load char</span>
+    <span style="color: #83a598;">blt</span> <span style="color: #fabd2f;">$t2</span><span style="color: #fe8019;">,</span> 'A'<span style="color: #fe8019;">,</span> endif 
+    <span style="color: #83a598;">ble</span> <span style="color: #fabd2f;">$t2</span><span style="color: #fe8019;">,</span> 'Z'<span style="color: #fe8019;">,</span> elseif_upper
+    
+<span style="color: #928374;"># </span><span style="color: #928374;">islower   </span>
+    <span style="color: #83a598;">bgt</span> <span style="color: #fabd2f;">$t2</span><span style="color: #fe8019;">,</span> 'z'<span style="color: #fe8019;">,</span> endif 
+    <span style="color: #83a598;">blt</span> <span style="color: #fabd2f;">$t2</span><span style="color: #fe8019;">,</span> 'a'<span style="color: #fe8019;">,</span> endif 
+    <span style="color: #fb4934;">addu</span> <span style="color: #fabd2f;">$t2</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t2</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t1</span> <span style="color: #928374;"># </span><span style="color: #928374;">ch += e</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$t6</span><span style="color: #fe8019;">,</span> 0x7A  
+    <span style="color: #83a598;">blt</span> <span style="color: #fabd2f;">$t2</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t6</span><span style="color: #fe8019;">,</span> endif <span style="color: #928374;"># </span><span style="color: #928374;">if ch &lt; 0x7A {goto endif}</span>
+    subiu <span style="color: #fabd2f;">$t2</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t2</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">26</span> <span style="color: #928374;"># </span><span style="color: #928374;">ch -= 26</span>
+    <span style="color: #fb4934;">j</span> endif
+<span style="color: #928374;"># </span><span style="color: #928374;">isupper</span>
+<span style="color: #b8bb26;">elseif_upper:</span>
+    <span style="color: #fb4934;">addu</span> <span style="color: #fabd2f;">$t2</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t2</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t1</span> <span style="color: #928374;"># </span><span style="color: #928374;">ch += e</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$t6</span><span style="color: #fe8019;">,</span> 0x5A
+    <span style="color: #83a598;">blt</span> <span style="color: #fabd2f;">$t2</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t6</span><span style="color: #fe8019;">,</span> endif <span style="color: #928374;"># </span><span style="color: #928374;">if ch &lt; 0x5A {goto endif}</span>
+    subiu <span style="color: #fabd2f;">$t2</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t2</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">26</span> <span style="color: #928374;"># </span><span style="color: #928374;">ch -= 26</span>
+    
+<span style="color: #b8bb26;">endif:</span>  
+    <span style="color: #fb4934;">sb</span> <span style="color: #fabd2f;">$t2</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">0</span>(<span style="color: #fabd2f;">$t5</span>)
+    <span style="color: #fb4934;">addiu</span> <span style="color: #fabd2f;">$t5</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t5</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">1</span> <span style="color: #928374;"># </span><span style="color: #928374;">ptr++</span>
+    <span style="color: #fb4934;">addiu</span> <span style="color: #fabd2f;">$t4</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t4</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">1</span> <span style="color: #928374;"># </span><span style="color: #928374;">i++</span>
+    <span style="color: #83a598;">blt</span> <span style="color: #fabd2f;">$t4</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t0</span><span style="color: #fe8019;">,</span> loop_body <span style="color: #928374;"># </span><span style="color: #928374;">check i&lt;n</span>
+    
+    <span style="color: #928374;"># </span><span style="color: #928374;">print final result prompt </span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">4</span>
+    <span style="color: #83a598;">la</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> msg4 
+    <span style="color: #fb4934;">syscall</span> 
+    
+    <span style="color: #928374;"># </span><span style="color: #928374;">print final result string</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">4</span> 
+    <span style="color: #83a598;">move</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t3</span>
+    <span style="color: #fb4934;">syscall</span>
+    
+    
+    <span style="color: #928374;"># </span><span style="color: #928374;">exit</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">10</span>
+    <span style="color: #fb4934;">syscall</span> 
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="org5b2e84c"></a>Task2<br />
+<div class="outline-text-5" id="text-org5b2e84c">
+<div class="org-src-container">
+<pre class="src src-mips"><span style="color: #928374;"># </span><span style="color: #928374;">Task2 </span>
+
+<span style="color: #928374;"># </span><span style="color: #928374;">Write a MIPS assembly program that asks the</span>
+<span style="color: #928374;"># </span><span style="color: #928374;">user for file name (max 50 chars). Open the</span>
+<span style="color: #928374;"># </span><span style="color: #928374;">file for reading. Next, read the file contents</span>
+<span style="color: #928374;"># </span><span style="color: #928374;">as characters (max 100 chars). After that,</span>
+<span style="color: #928374;"># </span><span style="color: #928374;">loop over each character, if the character is</span>
+<span style="color: #928374;"># </span><span style="color: #928374;">a digit (i.e. &#8216;0&#8217; to &#8216;9&#8217;), convert it to integer and</span>
+<span style="color: #928374;"># </span><span style="color: #928374;">store it in another array called &#8220;array int&#8221;.</span>
+<span style="color: #928374;"># </span><span style="color: #928374;">Assume the maximum number of integers</span>
+<span style="color: #928374;"># </span><span style="color: #928374;">in the file is 20. Finally, print &#8220;array int&#8221; in</span>
+<span style="color: #928374;"># </span><span style="color: #928374;">reverse order.</span>
+
+<span style="color: #ebdbb2; font-weight: bold;">.globl</span> main
+
+<span style="color: #928374;"># </span><span style="color: #928374;">define constants</span>
+.eqv FILE_READ <span style="color: #d3869b; font-weight: bold;">0</span>
+
+
+<span style="color: #ebdbb2; font-weight: bold;">.data</span> <span style="color: #928374;"># </span><span style="color: #928374;">static data segment</span>
+<span style="color: #b8bb26;">msg1:</span> <span style="color: #ebdbb2; font-weight: bold;">.asciiz</span> <span style="color: #b8bb26;">"Enter filename: "</span>
+<span style="color: #b8bb26;">msg2:</span> <span style="color: #ebdbb2; font-weight: bold;">.asciiz</span> <span style="color: #b8bb26;">"Integer array reversed = "</span>
+<span style="color: #b8bb26;">msg3:</span> <span style="color: #ebdbb2; font-weight: bold;">.asciiz</span> <span style="color: #b8bb26;">"File open error\nProbably file doesnt exist\n"</span>
+<span style="color: #b8bb26;">msg4:</span> <span style="color: #ebdbb2; font-weight: bold;">.asciiz</span> <span style="color: #b8bb26;">"File read error\nI cant read this file\n"</span> 
+<span style="color: #b8bb26;">filename:</span> <span style="color: #ebdbb2; font-weight: bold;">.space</span> <span style="color: #d3869b; font-weight: bold;">50</span>
+<span style="color: #b8bb26;">filecontents:</span> <span style="color: #ebdbb2; font-weight: bold;">.space</span> <span style="color: #d3869b; font-weight: bold;">100</span>
+<span style="color: #b8bb26;">array_int:</span> <span style="color: #ebdbb2; font-weight: bold;">.word</span> <span style="color: #d3869b; font-weight: bold;">0</span><span style="color: #fe8019;">:</span><span style="color: #d3869b; font-weight: bold;">20</span>
+
+<span style="color: #ebdbb2; font-weight: bold;">.text</span> 
+<span style="color: #b8bb26;">main:</span> 
+    <span style="color: #928374;"># </span><span style="color: #928374;">print string input prompt</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">4</span>
+    <span style="color: #83a598;">la</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> msg1
+    <span style="color: #fb4934;">syscall</span>
+    
+    <span style="color: #928374;"># </span><span style="color: #928374;">read string filename </span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">8</span>
+    <span style="color: #83a598;">la</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> filename
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$a1</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">49</span>
+    <span style="color: #fb4934;">syscall</span> 
+    
+<span style="color: #928374;"># </span><span style="color: #928374;">fix file name</span>
+    <span style="color: #83a598;">la</span> <span style="color: #fabd2f;">$t1</span><span style="color: #fe8019;">,</span> filename
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$s0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">0</span>               <span style="color: #928374;"># </span><span style="color: #928374;">i=0</span>
+<span style="color: #b8bb26;">remove:</span>
+    <span style="color: #fb4934;">lb</span> <span style="color: #fabd2f;">$a3</span><span style="color: #fe8019;">,</span> filename(<span style="color: #fabd2f;">$s0</span>)      <span style="color: #928374;"># </span><span style="color: #928374;">Load character at index</span>
+    <span style="color: #fb4934;">addi</span> <span style="color: #fabd2f;">$s0</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$s0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">1</span>        <span style="color: #928374;"># </span><span style="color: #928374;">i++</span>
+    <span style="color: #83a598;">bnez</span> <span style="color: #fabd2f;">$a3</span><span style="color: #fe8019;">,</span> remove   
+    <span style="color: #fb4934;">beq</span> <span style="color: #fabd2f;">$a1</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$s0</span><span style="color: #fe8019;">,</span> skip      
+    subiu <span style="color: #fabd2f;">$s0</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$s0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">2</span>     <span style="color: #928374;"># </span><span style="color: #928374;">assuming '\n' is before the last char</span>
+    <span style="color: #fb4934;">sb</span> <span style="color: #fabd2f;">$0</span><span style="color: #fe8019;">,</span> filename(<span style="color: #fabd2f;">$s0</span>)        <span style="color: #928374;"># </span><span style="color: #928374;">Add the terminating character in its place</span>
+<span style="color: #b8bb26;">skip:</span>
+
+    <span style="color: #928374;"># </span><span style="color: #928374;">open file </span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">13</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$a1</span><span style="color: #fe8019;">,</span> FILE_READ
+    <span style="color: #83a598;">la</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> filename
+    <span style="color: #fb4934;">syscall</span> 
+    <span style="color: #83a598;">blt</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$zero</span><span style="color: #fe8019;">,</span> file_open_err <span style="color: #928374;"># </span><span style="color: #928374;">assert file open</span>
+
+    <span style="color: #928374;"># </span><span style="color: #928374;">read file </span>
+    <span style="color: #83a598;">move</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$v0</span> 
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">14</span>
+    <span style="color: #83a598;">la</span> <span style="color: #fabd2f;">$a1</span><span style="color: #fe8019;">,</span> filecontents
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$a2</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">99</span>
+    <span style="color: #fb4934;">syscall</span> 
+    <span style="color: #83a598;">move</span> <span style="color: #fabd2f;">$t0</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$v0</span> <span style="color: #928374;"># </span><span style="color: #928374;">len in t0 </span>
+
+    <span style="color: #928374;"># </span><span style="color: #928374;">assert file open</span>
+    <span style="color: #83a598;">blt</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$zero</span><span style="color: #fe8019;">,</span> file_read_err 
+    
+    <span style="color: #928374;"># </span><span style="color: #928374;">str[len]=0; // add null char</span>
+    <span style="color: #fb4934;">sb</span> <span style="color: #fabd2f;">$0</span><span style="color: #fe8019;">,</span> filecontents+99 
+    
+<span style="color: #928374;"># </span><span style="color: #928374;">foreach() {</span>
+<span style="color: #928374;">#   </span><span style="color: #928374;">if ch == '\0'{ break; } </span>
+<span style="color: #928374;">#   </span><span style="color: #928374;">if ch &gt;= '0' &amp;&amp; ch &lt;= '9' { </span>
+<span style="color: #928374;">#       </span><span style="color: #928374;">add ch to array</span>
+<span style="color: #928374;"># </span>
+<span style="color: #928374;">#   </span><span style="color: #928374;">}</span>
+<span style="color: #928374;">#   </span><span style="color: #928374;">continue</span>
+<span style="color: #928374;"># </span><span style="color: #928374;">}</span>
+<span style="color: #928374;"># </span><span style="color: #928374;">$t0: file length </span>
+<span style="color: #928374;"># </span><span style="color: #928374;">$t1: index </span>
+<span style="color: #928374;"># </span><span style="color: #928374;">$t2: string ptr </span>
+<span style="color: #928374;"># </span><span style="color: #928374;">$t3: ch</span>
+    <span style="color: #83a598;">move</span> <span style="color: #fabd2f;">$t1</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$zero</span> <span style="color: #928374;"># </span><span style="color: #928374;">i=0</span>
+    <span style="color: #83a598;">move</span> <span style="color: #fabd2f;">$t6</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$zero</span> <span style="color: #928374;"># </span><span style="color: #928374;">arrlen</span>
+    <span style="color: #83a598;">la</span> <span style="color: #fabd2f;">$t2</span><span style="color: #fe8019;">,</span> filecontents <span style="color: #928374;"># </span><span style="color: #928374;">file ptr</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$t4</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">20</span>
+    <span style="color: #83a598;">la</span> <span style="color: #fabd2f;">$t5</span><span style="color: #fe8019;">,</span> array_int
+<span style="color: #b8bb26;">loop:</span>
+    <span style="color: #928374;">#</span><span style="color: #928374;">bge $t1, $t4, exitloop         </span>
+    <span style="color: #fb4934;">lbu</span> <span style="color: #fabd2f;">$t3</span><span style="color: #fe8019;">,</span> (<span style="color: #fabd2f;">$t2</span>) <span style="color: #928374;"># </span><span style="color: #928374;">load char </span>
+    <span style="color: #fb4934;">beq</span> <span style="color: #fabd2f;">$t3</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$0</span><span style="color: #fe8019;">,</span> exitloop <span style="color: #928374;"># </span><span style="color: #928374;">exit if null char</span>
+    <span style="color: #83a598;">blt</span> <span style="color: #fabd2f;">$t3</span><span style="color: #fe8019;">,</span> '<span style="color: #d3869b; font-weight: bold;">0</span>'<span style="color: #fe8019;">,</span> inc <span style="color: #928374;"># </span><span style="color: #928374;">check if less than 0</span>
+    <span style="color: #83a598;">bgt</span> <span style="color: #fabd2f;">$t3</span><span style="color: #fe8019;">,</span> '<span style="color: #d3869b; font-weight: bold;">9</span>'<span style="color: #fe8019;">,</span> inc <span style="color: #928374;"># </span><span style="color: #928374;">check if greater than 9</span>
+    
+    
+<span style="color: #b8bb26;">save:</span> <span style="color: #928374;">#</span><span style="color: #928374;">save word </span>
+    subiu <span style="color: #fabd2f;">$t3</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t3</span><span style="color: #fe8019;">,</span> '<span style="color: #d3869b; font-weight: bold;">0</span>' <span style="color: #928374;"># </span><span style="color: #928374;">to get the original value</span>
+    <span style="color: #fb4934;">sw</span> <span style="color: #fabd2f;">$t3</span><span style="color: #fe8019;">,</span> (<span style="color: #fabd2f;">$t5</span>) 
+    <span style="color: #fb4934;">addiu</span> <span style="color: #fabd2f;">$t5</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t5</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">4</span>
+    <span style="color: #fb4934;">addiu</span> <span style="color: #fabd2f;">$t6</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t6</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">1</span>
+
+<span style="color: #b8bb26;">inc:</span> <span style="color: #928374;">#</span><span style="color: #928374;">i++ and ptrs++</span>
+    
+    <span style="color: #fb4934;">addiu</span> <span style="color: #fabd2f;">$t1</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t1</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">1</span> <span style="color: #928374;"># </span><span style="color: #928374;">i++</span>
+    <span style="color: #fb4934;">addiu</span> <span style="color: #fabd2f;">$t2</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t2</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">1</span> <span style="color: #928374;"># </span><span style="color: #928374;">file ptr++</span>
+    <span style="color: #fb4934;">j</span> loop
+
+<span style="color: #b8bb26;">exitloop:</span>   
+
+    <span style="color: #928374;"># </span><span style="color: #928374;">print string result prompt</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">4</span> 
+    <span style="color: #83a598;">la</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> msg2 
+    <span style="color: #fb4934;">syscall</span>
+
+<span style="color: #928374;"># </span><span style="color: #928374;">for (i = len-1; i &gt;=0; i--) { }   </span>
+<span style="color: #928374;"># </span><span style="color: #928374;">print int array reversed</span>
+    subiu <span style="color: #fabd2f;">$t6</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t6</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">1</span>
+    <span style="color: #928374;"># </span><span style="color: #928374;">if len = 0 no res</span>
+    <span style="color: #fb4934;">beq</span> <span style="color: #fabd2f;">$t6</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$zero</span><span style="color: #fe8019;">,</span> endrev
+    
+<span style="color: #b8bb26;">rev:</span> 
+    <span style="color: #fb4934;">sll</span> <span style="color: #fabd2f;">$t2</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t6</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">2</span> <span style="color: #928374;"># </span><span style="color: #928374;">i*4</span>
+    <span style="color: #83a598;">la</span> <span style="color: #fabd2f;">$t3</span><span style="color: #fe8019;">,</span> array_int
+    <span style="color: #fb4934;">addu</span> <span style="color: #fabd2f;">$t2</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t3</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t2</span> 
+    
+    <span style="color: #fb4934;">lw</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> (<span style="color: #fabd2f;">$t2</span>)
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">1</span> 
+    <span style="color: #fb4934;">syscall</span> 
+    
+    <span style="color: #83a598;">blt</span> <span style="color: #fabd2f;">$t6</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">0</span><span style="color: #fe8019;">,</span> endrev
+    <span style="color: #928374;"># </span><span style="color: #928374;">print space</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">11</span> 
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> ' '
+    <span style="color: #fb4934;">syscall</span> 
+    
+    subiu <span style="color: #fabd2f;">$t6</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t6</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">1</span>
+    <span style="color: #fb4934;">bne</span> <span style="color: #fabd2f;">$t6</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b;">-1</span><span style="color: #fe8019;">,</span> rev
+<span style="color: #b8bb26;">endrev:</span> 
+    
+    <span style="color: #928374;"># </span><span style="color: #928374;">exit</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">10</span> 
+    <span style="color: #fb4934;">syscall</span> 
+    
+<span style="color: #928374;"># </span><span style="color: #928374;">error msgs segment    </span>
+<span style="color: #b8bb26;">file_open_err:</span>
+    <span style="color: #83a598;">la</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> msg3 
+    <span style="color: #fb4934;">j</span> file_err
+<span style="color: #b8bb26;">file_read_err:</span>
+    <span style="color: #83a598;">la</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> msg4 
+<span style="color: #b8bb26;">file_err:</span> 
+    <span style="color: #928374;"># </span><span style="color: #928374;">print preloaded string</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">4</span> 
+    <span style="color: #fb4934;">syscall</span> 
+    
+    <span style="color: #928374;"># </span><span style="color: #928374;">exit</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">10</span> 
+    <span style="color: #fb4934;">syscall</span>
+</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org56a717e" class="outline-3">
+<h3 id="org56a717e">Useful Macros</h3>
+<div class="outline-text-3" id="text-org56a717e">
 <p>
 use these to develop code faster
 </p>
