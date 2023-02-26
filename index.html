@@ -17,27 +17,28 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org3ed6386">Resources</a></li>
-<li><a href="#org8c3e975">MIPS assembly</a>
+<li><a href="#org645aa1e">Resources</a></li>
+<li><a href="#org0ab7a8c">MIPS assembly</a>
 <ul>
-<li><a href="#org9819cbb">Introduction</a>
+<li><a href="#org301a8fb">Introduction</a>
 <ul>
-<li><a href="#org785b3da">Mars simulator Setup</a></li>
-<li><a href="#orga904952">Hello, World</a></li>
-<li><a href="#org483b2b8">More about MIPS assembly</a></li>
-<li><a href="#org6e7ffab">Basic Syscalls</a></li>
-<li><a href="#orge0607ec">Registers</a></li>
+<li><a href="#org860194d">Mars simulator Setup</a></li>
+<li><a href="#orgef0c201">Hello, World</a></li>
+<li><a href="#org0178ea1">More about MIPS assembly</a></li>
+<li><a href="#org93d4dbc">Basic Syscalls</a></li>
+<li><a href="#orga22e67e">Registers</a></li>
 </ul>
 </li>
-<li><a href="#orgc466f9c">instructions</a></li>
-<li><a href="#orgf4300fd">Labs</a>
+<li><a href="#org2bdc1c8">instructions</a></li>
+<li><a href="#orga35f566">Labs</a>
 <ul>
-<li><a href="#org064126a">LAB 3</a></li>
-<li><a href="#orgff3b50c">LAB 4</a></li>
-<li><a href="#org246a25c">LAB 5</a></li>
+<li><a href="#org10b6c4c">LAB 3</a></li>
+<li><a href="#orgddc0818">LAB 4</a></li>
+<li><a href="#orgb55965d">LAB 5</a></li>
+<li><a href="#org84f8376">LAB 6</a></li>
 </ul>
 </li>
-<li><a href="#orgcdbda96">Useful Macros</a></li>
+<li><a href="#orgf3dc943">Useful Macros</a></li>
 </ul>
 </li>
 </ul>
@@ -51,9 +52,9 @@
 </ul>
 </blockquote>
 
-<div id="outline-container-org3ed6386" class="outline-2">
-<h2 id="org3ed6386">Resources</h2>
-<div class="outline-text-2" id="text-org3ed6386">
+<div id="outline-container-org645aa1e" class="outline-2">
+<h2 id="org645aa1e">Resources</h2>
+<div class="outline-text-2" id="text-org645aa1e">
 <ul class="org-ul">
 <li>Dr. Mudawar resources <a href="https://faculty.kfupm.edu.sa/coe/mudawar/coe301/lectures/index.htm">slides, examples etc.</a></li>
 <li>MIPS syscalls <a href="https://courses.missouristate.edu/kenvollmar/mars/help/syscallhelp.html">link</a></li>
@@ -71,17 +72,17 @@
 </div>
 </div>
 
-<div id="outline-container-org8c3e975" class="outline-2">
-<h2 id="org8c3e975">MIPS assembly</h2>
-<div class="outline-text-2" id="text-org8c3e975">
+<div id="outline-container-org0ab7a8c" class="outline-2">
+<h2 id="org0ab7a8c">MIPS assembly</h2>
+<div class="outline-text-2" id="text-org0ab7a8c">
 </div>
-<div id="outline-container-org9819cbb" class="outline-3">
-<h3 id="org9819cbb">Introduction</h3>
-<div class="outline-text-3" id="text-org9819cbb">
+<div id="outline-container-org301a8fb" class="outline-3">
+<h3 id="org301a8fb">Introduction</h3>
+<div class="outline-text-3" id="text-org301a8fb">
 </div>
-<div id="outline-container-org785b3da" class="outline-4">
-<h4 id="org785b3da">Mars simulator Setup</h4>
-<div class="outline-text-4" id="text-org785b3da">
+<div id="outline-container-org860194d" class="outline-4">
+<h4 id="org860194d">Mars simulator Setup</h4>
+<div class="outline-text-4" id="text-org860194d">
 <ol class="org-ol">
 <li>File (or Ctrl-N) -&gt; New File</li>
 <li>Copy paste the code below</li>
@@ -94,9 +95,9 @@
 </div>
 
 
-<div id="outline-container-orga904952" class="outline-4">
-<h4 id="orga904952">Hello, World</h4>
-<div class="outline-text-4" id="text-orga904952">
+<div id="outline-container-orgef0c201" class="outline-4">
+<h4 id="orgef0c201">Hello, World</h4>
+<div class="outline-text-4" id="text-orgef0c201">
 <div class="org-src-container">
 <pre class="src src-mips"><span style="color: #928374;"># </span><span style="color: #b8bb26; font-weight: bold;">NOTE:</span><span style="color: #928374;"> Hello, World in assembly</span>
 <span style="color: #ebdbb2; font-weight: bold;">.globl</span> main
@@ -124,27 +125,27 @@
 </div>
 </div>
 
-<div id="outline-container-org483b2b8" class="outline-4">
-<h4 id="org483b2b8">More about MIPS assembly</h4>
-<div class="outline-text-4" id="text-org483b2b8">
+<div id="outline-container-org0178ea1" class="outline-4">
+<h4 id="org0178ea1">More about MIPS assembly</h4>
+<div class="outline-text-4" id="text-org0178ea1">
 <p>
 MIPS assembly was introduced in 1986 and there are different versions (I, I, &#x2026;, MIPS32, MIPS64).
 </p>
 </div>
 </div>
 
-<div id="outline-container-org6e7ffab" class="outline-4">
-<h4 id="org6e7ffab">Basic Syscalls</h4>
-<div class="outline-text-4" id="text-org6e7ffab">
+<div id="outline-container-org93d4dbc" class="outline-4">
+<h4 id="org93d4dbc">Basic Syscalls</h4>
+<div class="outline-text-4" id="text-org93d4dbc">
 <p>
 Full reference MIPS syscalls <a href="https://courses.missouristate.edu/kenvollmar/mars/help/syscallhelp.html">link</a>
 </p>
 </div>
 </div>
 
-<div id="outline-container-orge0607ec" class="outline-4">
-<h4 id="orge0607ec">Registers</h4>
-<div class="outline-text-4" id="text-orge0607ec">
+<div id="outline-container-orga22e67e" class="outline-4">
+<h4 id="orga22e67e">Registers</h4>
+<div class="outline-text-4" id="text-orga22e67e">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -254,9 +255,9 @@ Full reference MIPS syscalls <a href="https://courses.missouristate.edu/kenvollm
 </div>
 </div>
 
-<div id="outline-container-orgc466f9c" class="outline-3">
-<h3 id="orgc466f9c">instructions</h3>
-<div class="outline-text-3" id="text-orgc466f9c">
+<div id="outline-container-org2bdc1c8" class="outline-3">
+<h3 id="org2bdc1c8">instructions</h3>
+<div class="outline-text-3" id="text-org2bdc1c8">
 <p>
 <a href="https://www.dsi.unive.it/~gasparetto/materials/MIPS_Instruction_Set.pdf">SIMPLER REF SHEET</a>
 <a href="https://uweb.engr.arizona.edu/~ece369/Resources/spim/MIPSReference.pdf">MIPS REFERENCE SHEET</a>
@@ -264,20 +265,20 @@ Full reference MIPS syscalls <a href="https://courses.missouristate.edu/kenvollm
 </div>
 </div>
 
-<div id="outline-container-orgf4300fd" class="outline-3">
-<h3 id="orgf4300fd">Labs</h3>
-<div class="outline-text-3" id="text-orgf4300fd">
+<div id="outline-container-orga35f566" class="outline-3">
+<h3 id="orga35f566">Labs</h3>
+<div class="outline-text-3" id="text-orga35f566">
 <p>
 If you find any errors please submit a pull request
 </p>
 </div>
-<div id="outline-container-org064126a" class="outline-4">
-<h4 id="org064126a">LAB 3</h4>
-<div class="outline-text-4" id="text-org064126a">
+<div id="outline-container-org10b6c4c" class="outline-4">
+<h4 id="org10b6c4c">LAB 3</h4>
+<div class="outline-text-4" id="text-org10b6c4c">
 </div>
 <ul class="org-ul">
-<li><a id="org1c203f7"></a>Task1<br />
-<div class="outline-text-5" id="text-org1c203f7">
+<li><a id="orga1101c7"></a>Task1<br />
+<div class="outline-text-5" id="text-orga1101c7">
 <div class="org-src-container">
 <pre class="src src-mips"><span style="color: #928374;"># </span><span style="color: #928374;">task1</span>
 <span style="color: #928374;"># </span><span style="color: #928374;">get integer input </span>
@@ -335,8 +336,8 @@ If you find any errors please submit a pull request
 </div>
 </li>
 
-<li><a id="org6c585e7"></a>Task2<br />
-<div class="outline-text-5" id="text-org6c585e7">
+<li><a id="org6bde4bc"></a>Task2<br />
+<div class="outline-text-5" id="text-org6bde4bc">
 <div class="org-src-container">
 <pre class="src src-mips"><span style="color: #928374;"># </span><span style="color: #928374;">task2 </span>
 <span style="color: #928374;"># </span><span style="color: #928374;">get an integer input </span>
@@ -385,13 +386,13 @@ If you find any errors please submit a pull request
 </li>
 </ul>
 </div>
-<div id="outline-container-orgff3b50c" class="outline-4">
-<h4 id="orgff3b50c">LAB 4</h4>
-<div class="outline-text-4" id="text-orgff3b50c">
+<div id="outline-container-orgddc0818" class="outline-4">
+<h4 id="orgddc0818">LAB 4</h4>
+<div class="outline-text-4" id="text-orgddc0818">
 </div>
 <ul class="org-ul">
-<li><a id="org055ee1e"></a>Task1<br />
-<div class="outline-text-5" id="text-org055ee1e">
+<li><a id="orgb932788"></a>Task1<br />
+<div class="outline-text-5" id="text-orgb932788">
 <div class="org-src-container">
 <pre class="src src-mips"><span style="color: #ebdbb2; font-weight: bold;">.globl</span> main
 
@@ -480,13 +481,13 @@ If you find any errors please submit a pull request
 </ul>
 </div>
 
-<div id="outline-container-org246a25c" class="outline-4">
-<h4 id="org246a25c">LAB 5</h4>
-<div class="outline-text-4" id="text-org246a25c">
+<div id="outline-container-orgb55965d" class="outline-4">
+<h4 id="orgb55965d">LAB 5</h4>
+<div class="outline-text-4" id="text-orgb55965d">
 </div>
 <ul class="org-ul">
-<li><a id="org5ec4305"></a>Task1<br />
-<div class="outline-text-5" id="text-org5ec4305">
+<li><a id="org6a98e5b"></a>Task1<br />
+<div class="outline-text-5" id="text-org6a98e5b">
 <div class="org-src-container">
 <pre class="src src-mips"><span style="color: #928374;"># </span><span style="color: #928374;">TASK1</span>
 
@@ -628,8 +629,8 @@ If you find any errors please submit a pull request
 </div>
 </li>
 
-<li><a id="orged2508c"></a>Task2<br />
-<div class="outline-text-5" id="text-orged2508c">
+<li><a id="orgfbdb69d"></a>Task2<br />
+<div class="outline-text-5" id="text-orgfbdb69d">
 <div class="org-src-container">
 <pre class="src src-mips"><span style="color: #928374;"># </span><span style="color: #928374;">Task2 </span>
 
@@ -798,11 +799,228 @@ If you find any errors please submit a pull request
 </li>
 </ul>
 </div>
+
+<div id="outline-container-org84f8376" class="outline-4">
+<h4 id="org84f8376">LAB 6</h4>
+<div class="outline-text-4" id="text-org84f8376">
+</div>
+<ul class="org-ul">
+<li><a id="org551ef99"></a>Task1<br />
+<div class="outline-text-5" id="text-org551ef99">
+<div class="org-src-container">
+<pre class="src src-mips"><span style="color: #928374;"># </span><span style="color: #928374;">convert withdrawal money amount to bank notes</span>
+<span style="color: #ebdbb2; font-weight: bold;">.globl</span> main 
+
+<span style="color: #ebdbb2; font-weight: bold;">.data</span> 
+<span style="color: #b8bb26;">msg1:</span> <span style="color: #ebdbb2; font-weight: bold;">.asciiz</span> <span style="color: #b8bb26;">"Enter withdrawal amount: "</span>
+<span style="color: #b8bb26;">msg2:</span> <span style="color: #ebdbb2; font-weight: bold;">.asciiz</span> <span style="color: #b8bb26;">"500 Bank note: "</span>
+<span style="color: #b8bb26;">msg3:</span> <span style="color: #ebdbb2; font-weight: bold;">.asciiz</span> <span style="color: #b8bb26;">"100 Bank note: "</span>
+<span style="color: #b8bb26;">msg4:</span> <span style="color: #ebdbb2; font-weight: bold;">.asciiz</span> <span style="color: #b8bb26;">"50 Bank note: "</span>
+<span style="color: #b8bb26;">msg5:</span> <span style="color: #ebdbb2; font-weight: bold;">.asciiz</span> <span style="color: #b8bb26;">"10 Bank note: "</span>
+<span style="color: #b8bb26;">msg6:</span> <span style="color: #ebdbb2; font-weight: bold;">.asciiz</span> <span style="color: #b8bb26;">"5 Bank note: "</span>
+<span style="color: #b8bb26;">msg7:</span> <span style="color: #ebdbb2; font-weight: bold;">.asciiz</span> <span style="color: #b8bb26;">"1 Bank note: "</span>
+
+<span style="color: #ebdbb2; font-weight: bold;">.text</span> 
+<span style="color: #b8bb26;">main:</span>
+    <span style="color: #928374;"># </span><span style="color: #928374;">print string input prompt</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">4</span> 
+    <span style="color: #83a598;">la</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> msg1 
+    <span style="color: #fb4934;">syscall</span> 
+    
+    <span style="color: #928374;"># </span><span style="color: #928374;">read integer </span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">5</span> 
+    <span style="color: #fb4934;">syscall</span> 
+    <span style="color: #83a598;">move</span> <span style="color: #fabd2f;">$t0</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$v0</span>
+    
+    <span style="color: #928374;"># </span><span style="color: #928374;">get 500s</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$t1</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">500</span>
+    <span style="color: #fb4934;">div</span> <span style="color: #fabd2f;">$t2</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t0</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t1</span> 
+    <span style="color: #fb4934;">mfhi</span> <span style="color: #fabd2f;">$t0</span>
+    
+    <span style="color: #928374;"># </span><span style="color: #928374;">get 100s</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$t1</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">100</span> 
+    <span style="color: #fb4934;">div</span> <span style="color: #fabd2f;">$t3</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t0</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t1</span> 
+    <span style="color: #fb4934;">mfhi</span> <span style="color: #fabd2f;">$t0</span>
+        
+        
+    <span style="color: #928374;"># </span><span style="color: #928374;">get 50s</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$t1</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">50</span> 
+    <span style="color: #fb4934;">div</span> <span style="color: #fabd2f;">$t4</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t0</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t1</span> 
+    <span style="color: #fb4934;">mfhi</span> <span style="color: #fabd2f;">$t0</span>
+    
+    <span style="color: #928374;"># </span><span style="color: #928374;">get 10s</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$t1</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">10</span> 
+    <span style="color: #fb4934;">div</span> <span style="color: #fabd2f;">$t5</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t0</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t1</span> 
+    <span style="color: #fb4934;">mfhi</span> <span style="color: #fabd2f;">$t0</span>
+    
+    <span style="color: #928374;"># </span><span style="color: #928374;">get 5s</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$t1</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">5</span> 
+    <span style="color: #fb4934;">div</span> <span style="color: #fabd2f;">$t6</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t0</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t1</span> 
+    <span style="color: #fb4934;">mfhi</span> <span style="color: #fabd2f;">$t0</span>
+    
+    <span style="color: #928374;"># </span><span style="color: #928374;">get 1s</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$t1</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">1</span> 
+    <span style="color: #fb4934;">div</span> <span style="color: #fabd2f;">$t7</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t0</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t1</span> 
+    <span style="color: #fb4934;">mfhi</span> <span style="color: #fabd2f;">$t0</span>
+    
+<span style="color: #b8bb26;">x_500s:</span>
+    <span style="color: #fb4934;">blez</span> <span style="color: #fabd2f;">$t2</span><span style="color: #fe8019;">,</span> x_100s
+    
+    <span style="color: #83a598;">la</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> msg2
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">4</span> 
+    <span style="color: #fb4934;">syscall</span>
+    
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">1</span> 
+    <span style="color: #83a598;">move</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t2</span> 
+    <span style="color: #fb4934;">syscall</span> 
+    
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">11</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> '\n'
+    <span style="color: #fb4934;">syscall</span> 
+     
+<span style="color: #b8bb26;">x_100s:</span>
+    <span style="color: #fb4934;">blez</span> <span style="color: #fabd2f;">$t3</span><span style="color: #fe8019;">,</span> x_50s
+    
+    <span style="color: #83a598;">la</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> msg3
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">4</span> 
+    <span style="color: #fb4934;">syscall</span>
+    
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">1</span> 
+    <span style="color: #83a598;">move</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t3</span> 
+    <span style="color: #fb4934;">syscall</span> 
+    
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">11</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> '\n'
+    <span style="color: #fb4934;">syscall</span>
+<span style="color: #b8bb26;">x_50s:</span> 
+    <span style="color: #fb4934;">blez</span> <span style="color: #fabd2f;">$t4</span><span style="color: #fe8019;">,</span> x_10s
+    
+    <span style="color: #83a598;">la</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> msg4
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">4</span> 
+    <span style="color: #fb4934;">syscall</span>
+    
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">1</span> 
+    <span style="color: #83a598;">move</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t4</span> 
+    <span style="color: #fb4934;">syscall</span> 
+    
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">11</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> '\n'
+    <span style="color: #fb4934;">syscall</span>
+<span style="color: #b8bb26;">x_10s:</span>
+    <span style="color: #fb4934;">blez</span> <span style="color: #fabd2f;">$t5</span><span style="color: #fe8019;">,</span> x_5s 
+    
+    <span style="color: #83a598;">la</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> msg5
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">4</span> 
+    <span style="color: #fb4934;">syscall</span>
+    
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">1</span> 
+    <span style="color: #83a598;">move</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t5</span> 
+    <span style="color: #fb4934;">syscall</span> 
+    
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">11</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> '\n'
+    <span style="color: #fb4934;">syscall</span>
+<span style="color: #b8bb26;">x_5s:</span>
+    <span style="color: #fb4934;">blez</span> <span style="color: #fabd2f;">$t6</span><span style="color: #fe8019;">,</span> x_1s
+    
+    <span style="color: #83a598;">la</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> msg6
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">4</span> 
+    <span style="color: #fb4934;">syscall</span>
+    
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">1</span> 
+    <span style="color: #83a598;">move</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t6</span>
+    <span style="color: #fb4934;">syscall</span> 
+    
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">11</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> '\n'
+    <span style="color: #fb4934;">syscall</span>
+    
+<span style="color: #b8bb26;">x_1s:</span>
+    <span style="color: #fb4934;">blez</span> <span style="color: #fabd2f;">$t7</span><span style="color: #fe8019;">,</span> done 
+    <span style="color: #83a598;">la</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> msg7
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">4</span> 
+    <span style="color: #fb4934;">syscall</span>
+    
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">1</span> 
+    <span style="color: #83a598;">move</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t7</span> 
+    <span style="color: #fb4934;">syscall</span> 
+    
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">11</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> '\n'
+    <span style="color: #fb4934;">syscall</span>
+    
+<span style="color: #b8bb26;">done:</span> 
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">10</span> 
+    <span style="color: #fb4934;">syscall</span>
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="org347f4e3"></a>Task2<br />
+<div class="outline-text-5" id="text-org347f4e3">
+<div class="org-src-container">
+<pre class="src src-mips"><span style="color: #928374;"># </span><span style="color: #928374;">Get factorial of input number</span>
+<span style="color: #ebdbb2; font-weight: bold;">.globl</span> main 
+
+<span style="color: #ebdbb2; font-weight: bold;">.data</span> 
+<span style="color: #b8bb26;">msg:</span> <span style="color: #ebdbb2; font-weight: bold;">.asciiz</span> <span style="color: #b8bb26;">"Enter n: "</span>
+<span style="color: #b8bb26;">msg2:</span> <span style="color: #ebdbb2; font-weight: bold;">.asciiz</span> <span style="color: #b8bb26;">"n! = "</span>
+<span style="color: #ebdbb2; font-weight: bold;">.text</span> 
+
+<span style="color: #b8bb26;">main:</span> 
+    <span style="color: #928374;"># </span><span style="color: #928374;">print string input prompt </span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">4</span> 
+    <span style="color: #83a598;">la</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> msg 
+    <span style="color: #fb4934;">syscall</span> 
+    
+    <span style="color: #928374;"># </span><span style="color: #928374;">read int</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">5</span>
+    <span style="color: #fb4934;">syscall</span> 
+    <span style="color: #83a598;">move</span> <span style="color: #fabd2f;">$t0</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$v0</span> 
+    
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$t1</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">1</span> <span style="color: #928374;"># </span><span style="color: #928374;">result </span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$t2</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">1</span> <span style="color: #928374;"># </span><span style="color: #928374;">i</span>
+<span style="color: #b8bb26;">loop:</span> 
+    <span style="color: #83a598;">bgt</span> <span style="color: #fabd2f;">$t2</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t0</span><span style="color: #fe8019;">,</span> endLoop 
+<span style="color: #b8bb26;">body:</span> 
+    <span style="color: #fb4934;">mul</span> <span style="color: #fabd2f;">$t1</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t1</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t2</span> 
+
+<span style="color: #b8bb26;">inc:</span> <span style="color: #928374;"># </span><span style="color: #928374;">i++</span>
+    <span style="color: #fb4934;">addi</span> <span style="color: #fabd2f;">$t2</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t2</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">1</span> 
+    <span style="color: #fb4934;">j</span> loop
+<span style="color: #b8bb26;">endLoop:</span>
+
+    <span style="color: #928374;"># </span><span style="color: #928374;">print output prompt </span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">4</span> 
+    <span style="color: #83a598;">la</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> msg2 
+    <span style="color: #fb4934;">syscall</span> 
+    
+    <span style="color: #928374;"># </span><span style="color: #928374;">print int result</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">1</span> 
+    <span style="color: #83a598;">move</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> <span style="color: #fabd2f;">$t1</span> 
+    <span style="color: #fb4934;">syscall</span> 
+    
+    <span style="color: #928374;"># </span><span style="color: #928374;">print newline</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">11</span> 
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> '\n' 
+    <span style="color: #fb4934;">syscall</span> 
+    
+    <span style="color: #928374;"># </span><span style="color: #928374;">exit</span>
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">10</span> 
+    <span style="color: #fb4934;">syscall</span>
+</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
 </div>
 
-<div id="outline-container-orgcdbda96" class="outline-3">
-<h3 id="orgcdbda96">Useful Macros</h3>
-<div class="outline-text-3" id="text-orgcdbda96">
+
+<div id="outline-container-orgf3dc943" class="outline-3">
+<h3 id="orgf3dc943">Useful Macros</h3>
+<div class="outline-text-3" id="text-orgf3dc943">
 <p>
 use these to develop code faster
 </p>
