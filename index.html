@@ -17,33 +17,33 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgcbd2485">Resources</a></li>
-<li><a href="#org00cab2c">MIPS assembly</a>
+<li><a href="#org38b25c9">Resources</a></li>
+<li><a href="#org0b7ee89">MIPS assembly</a>
 <ul>
-<li><a href="#org97d2282">Introduction</a>
+<li><a href="#org0f93438">Introduction</a>
 <ul>
-<li><a href="#org0c454a5">Mars simulator Setup</a></li>
-<li><a href="#org97e4f6e">Hello, World</a></li>
-<li><a href="#org8eb072f">More about MIPS assembly</a></li>
-<li><a href="#orgbe3739b">Basic Syscalls</a></li>
-<li><a href="#orgfad97a6">Registers</a></li>
+<li><a href="#org06dcea9">Mars simulator Setup</a></li>
+<li><a href="#org40a940e">Hello, World</a></li>
+<li><a href="#orge9dc1ae">More about MIPS assembly</a></li>
+<li><a href="#org6e67391">Basic Syscalls</a></li>
+<li><a href="#org5b2bb6a">Registers</a></li>
 </ul>
 </li>
-<li><a href="#orgd0ad90c">instructions</a></li>
-<li><a href="#org09da331">Labs</a>
+<li><a href="#orga227a65">instructions</a></li>
+<li><a href="#org65a42f4">Labs</a>
 <ul>
-<li><a href="#orga94d2e5">LAB 3</a></li>
-<li><a href="#org0c02b2e">LAB 4</a></li>
-<li><a href="#org931c21d">LAB 5</a></li>
-<li><a href="#org0d5f313">LAB 6</a></li>
+<li><a href="#orgc67da79">LAB 3</a></li>
+<li><a href="#orgd892c3a">LAB 4</a></li>
+<li><a href="#orge39131d">LAB 5</a></li>
+<li><a href="#orgc850b7f">LAB 6</a></li>
 </ul>
 </li>
-<li><a href="#org3da997c">Homework</a>
+<li><a href="#orgafb2015">Homework</a>
 <ul>
-<li><a href="#orge7b68d0">HM1</a></li>
+<li><a href="#orgc4a5cdc">HM1</a></li>
 </ul>
 </li>
-<li><a href="#org1943030">Useful Macros</a></li>
+<li><a href="#org1f07d54">Useful Macros</a></li>
 </ul>
 </li>
 </ul>
@@ -57,9 +57,9 @@
 </ul>
 </blockquote>
 
-<div id="outline-container-orgcbd2485" class="outline-2">
-<h2 id="orgcbd2485">Resources</h2>
-<div class="outline-text-2" id="text-orgcbd2485">
+<div id="outline-container-org38b25c9" class="outline-2">
+<h2 id="org38b25c9">Resources</h2>
+<div class="outline-text-2" id="text-org38b25c9">
 <ul class="org-ul">
 <li>Dr. Mudawar resources <a href="https://faculty.kfupm.edu.sa/coe/mudawar/coe301/lectures/index.htm">slides, examples etc.</a></li>
 <li>MIPS syscalls <a href="https://courses.missouristate.edu/kenvollmar/mars/help/syscallhelp.html">link</a></li>
@@ -77,17 +77,17 @@
 </div>
 </div>
 
-<div id="outline-container-org00cab2c" class="outline-2">
-<h2 id="org00cab2c">MIPS assembly</h2>
-<div class="outline-text-2" id="text-org00cab2c">
+<div id="outline-container-org0b7ee89" class="outline-2">
+<h2 id="org0b7ee89">MIPS assembly</h2>
+<div class="outline-text-2" id="text-org0b7ee89">
 </div>
-<div id="outline-container-org97d2282" class="outline-3">
-<h3 id="org97d2282">Introduction</h3>
-<div class="outline-text-3" id="text-org97d2282">
+<div id="outline-container-org0f93438" class="outline-3">
+<h3 id="org0f93438">Introduction</h3>
+<div class="outline-text-3" id="text-org0f93438">
 </div>
-<div id="outline-container-org0c454a5" class="outline-4">
-<h4 id="org0c454a5">Mars simulator Setup</h4>
-<div class="outline-text-4" id="text-org0c454a5">
+<div id="outline-container-org06dcea9" class="outline-4">
+<h4 id="org06dcea9">Mars simulator Setup</h4>
+<div class="outline-text-4" id="text-org06dcea9">
 <ol class="org-ol">
 <li>File (or Ctrl-N) -&gt; New File</li>
 <li>Copy paste the code below</li>
@@ -100,9 +100,9 @@
 </div>
 
 
-<div id="outline-container-org97e4f6e" class="outline-4">
-<h4 id="org97e4f6e">Hello, World</h4>
-<div class="outline-text-4" id="text-org97e4f6e">
+<div id="outline-container-org40a940e" class="outline-4">
+<h4 id="org40a940e">Hello, World</h4>
+<div class="outline-text-4" id="text-org40a940e">
 <div class="org-src-container">
 <pre class="src src-mips"><span style="color: #928374;"># </span><span style="color: #b8bb26; font-weight: bold;">NOTE:</span><span style="color: #928374;"> Hello, World in assembly</span>
 <span style="color: #ebdbb2; font-weight: bold;">.globl</span> main
@@ -130,27 +130,27 @@
 </div>
 </div>
 
-<div id="outline-container-org8eb072f" class="outline-4">
-<h4 id="org8eb072f">More about MIPS assembly</h4>
-<div class="outline-text-4" id="text-org8eb072f">
+<div id="outline-container-orge9dc1ae" class="outline-4">
+<h4 id="orge9dc1ae">More about MIPS assembly</h4>
+<div class="outline-text-4" id="text-orge9dc1ae">
 <p>
 MIPS assembly was introduced in 1986 and there are different versions (I, I, &#x2026;, MIPS32, MIPS64).
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgbe3739b" class="outline-4">
-<h4 id="orgbe3739b">Basic Syscalls</h4>
-<div class="outline-text-4" id="text-orgbe3739b">
+<div id="outline-container-org6e67391" class="outline-4">
+<h4 id="org6e67391">Basic Syscalls</h4>
+<div class="outline-text-4" id="text-org6e67391">
 <p>
 Full reference MIPS syscalls <a href="https://courses.missouristate.edu/kenvollmar/mars/help/syscallhelp.html">link</a>
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgfad97a6" class="outline-4">
-<h4 id="orgfad97a6">Registers</h4>
-<div class="outline-text-4" id="text-orgfad97a6">
+<div id="outline-container-org5b2bb6a" class="outline-4">
+<h4 id="org5b2bb6a">Registers</h4>
+<div class="outline-text-4" id="text-org5b2bb6a">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -260,9 +260,9 @@ Full reference MIPS syscalls <a href="https://courses.missouristate.edu/kenvollm
 </div>
 </div>
 
-<div id="outline-container-orgd0ad90c" class="outline-3">
-<h3 id="orgd0ad90c">instructions</h3>
-<div class="outline-text-3" id="text-orgd0ad90c">
+<div id="outline-container-orga227a65" class="outline-3">
+<h3 id="orga227a65">instructions</h3>
+<div class="outline-text-3" id="text-orga227a65">
 <p>
 <a href="https://www.dsi.unive.it/~gasparetto/materials/MIPS_Instruction_Set.pdf">SIMPLER REF SHEET</a>
 <a href="https://uweb.engr.arizona.edu/~ece369/Resources/spim/MIPSReference.pdf">MIPS REFERENCE SHEET</a>
@@ -270,20 +270,20 @@ Full reference MIPS syscalls <a href="https://courses.missouristate.edu/kenvollm
 </div>
 </div>
 
-<div id="outline-container-org09da331" class="outline-3">
-<h3 id="org09da331">Labs</h3>
-<div class="outline-text-3" id="text-org09da331">
+<div id="outline-container-org65a42f4" class="outline-3">
+<h3 id="org65a42f4">Labs</h3>
+<div class="outline-text-3" id="text-org65a42f4">
 <p>
 If you find any errors please submit a pull request
 </p>
 </div>
-<div id="outline-container-orga94d2e5" class="outline-4">
-<h4 id="orga94d2e5">LAB 3</h4>
-<div class="outline-text-4" id="text-orga94d2e5">
+<div id="outline-container-orgc67da79" class="outline-4">
+<h4 id="orgc67da79">LAB 3</h4>
+<div class="outline-text-4" id="text-orgc67da79">
 </div>
 <ul class="org-ul">
-<li><a id="org64c28ef"></a>Task1<br />
-<div class="outline-text-5" id="text-org64c28ef">
+<li><a id="org8cbf37d"></a>Task1<br />
+<div class="outline-text-5" id="text-org8cbf37d">
 <div class="org-src-container">
 <pre class="src src-mips"><span style="color: #928374;"># </span><span style="color: #928374;">task1</span>
 <span style="color: #928374;"># </span><span style="color: #928374;">get integer input </span>
@@ -341,8 +341,8 @@ If you find any errors please submit a pull request
 </div>
 </li>
 
-<li><a id="org44f4ac4"></a>Task2<br />
-<div class="outline-text-5" id="text-org44f4ac4">
+<li><a id="org448f4c8"></a>Task2<br />
+<div class="outline-text-5" id="text-org448f4c8">
 <div class="org-src-container">
 <pre class="src src-mips"><span style="color: #928374;"># </span><span style="color: #928374;">task2 </span>
 <span style="color: #928374;"># </span><span style="color: #928374;">get an integer input </span>
@@ -391,13 +391,13 @@ If you find any errors please submit a pull request
 </li>
 </ul>
 </div>
-<div id="outline-container-org0c02b2e" class="outline-4">
-<h4 id="org0c02b2e">LAB 4</h4>
-<div class="outline-text-4" id="text-org0c02b2e">
+<div id="outline-container-orgd892c3a" class="outline-4">
+<h4 id="orgd892c3a">LAB 4</h4>
+<div class="outline-text-4" id="text-orgd892c3a">
 </div>
 <ul class="org-ul">
-<li><a id="org6f4a464"></a>Task1<br />
-<div class="outline-text-5" id="text-org6f4a464">
+<li><a id="orgc4cf2e9"></a>Task1<br />
+<div class="outline-text-5" id="text-orgc4cf2e9">
 <div class="org-src-container">
 <pre class="src src-mips"><span style="color: #ebdbb2; font-weight: bold;">.globl</span> main
 
@@ -486,13 +486,13 @@ If you find any errors please submit a pull request
 </ul>
 </div>
 
-<div id="outline-container-org931c21d" class="outline-4">
-<h4 id="org931c21d">LAB 5</h4>
-<div class="outline-text-4" id="text-org931c21d">
+<div id="outline-container-orge39131d" class="outline-4">
+<h4 id="orge39131d">LAB 5</h4>
+<div class="outline-text-4" id="text-orge39131d">
 </div>
 <ul class="org-ul">
-<li><a id="org5c9c174"></a>Task1<br />
-<div class="outline-text-5" id="text-org5c9c174">
+<li><a id="org33d8450"></a>Task1<br />
+<div class="outline-text-5" id="text-org33d8450">
 <div class="org-src-container">
 <pre class="src src-mips"><span style="color: #928374;"># </span><span style="color: #928374;">TASK1</span>
 
@@ -634,8 +634,8 @@ If you find any errors please submit a pull request
 </div>
 </li>
 
-<li><a id="org378eb2b"></a>Task2<br />
-<div class="outline-text-5" id="text-org378eb2b">
+<li><a id="org543af61"></a>Task2<br />
+<div class="outline-text-5" id="text-org543af61">
 <div class="org-src-container">
 <pre class="src src-mips"><span style="color: #928374;"># </span><span style="color: #928374;">Task2 </span>
 
@@ -805,13 +805,13 @@ If you find any errors please submit a pull request
 </ul>
 </div>
 
-<div id="outline-container-org0d5f313" class="outline-4">
-<h4 id="org0d5f313">LAB 6</h4>
-<div class="outline-text-4" id="text-org0d5f313">
+<div id="outline-container-orgc850b7f" class="outline-4">
+<h4 id="orgc850b7f">LAB 6</h4>
+<div class="outline-text-4" id="text-orgc850b7f">
 </div>
 <ul class="org-ul">
-<li><a id="org3d314f5"></a>Task1<br />
-<div class="outline-text-5" id="text-org3d314f5">
+<li><a id="orgd9b64e0"></a>Task1<br />
+<div class="outline-text-5" id="text-orgd9b64e0">
 <div class="org-src-container">
 <pre class="src src-mips"><span style="color: #928374;"># </span><span style="color: #928374;">convert withdrawal money amount to bank notes</span>
 <span style="color: #ebdbb2; font-weight: bold;">.globl</span> main 
@@ -962,8 +962,8 @@ If you find any errors please submit a pull request
 </div>
 </li>
 
-<li><a id="org51fe92d"></a>Task2<br />
-<div class="outline-text-5" id="text-org51fe92d">
+<li><a id="org595ffac"></a>Task2<br />
+<div class="outline-text-5" id="text-org595ffac">
 <div class="org-src-container">
 <pre class="src src-mips"><span style="color: #928374;"># </span><span style="color: #928374;">Get factorial of input number</span>
 <span style="color: #ebdbb2; font-weight: bold;">.globl</span> main 
@@ -1022,13 +1022,13 @@ If you find any errors please submit a pull request
 </div>
 </div>
 
-<div id="outline-container-org3da997c" class="outline-3">
-<h3 id="org3da997c">Homework</h3>
-<div class="outline-text-3" id="text-org3da997c">
+<div id="outline-container-orgafb2015" class="outline-3">
+<h3 id="orgafb2015">Homework</h3>
+<div class="outline-text-3" id="text-orgafb2015">
 </div>
-<div id="outline-container-orge7b68d0" class="outline-4">
-<h4 id="orge7b68d0">HM1</h4>
-<div class="outline-text-4" id="text-orge7b68d0">
+<div id="outline-container-orgc4a5cdc" class="outline-4">
+<h4 id="orgc4a5cdc">HM1</h4>
+<div class="outline-text-4" id="text-orgc4a5cdc">
 <div class="org-src-container">
 <pre class="src src-mips"><span style="color: #928374;"># </span><span style="color: #928374;">Homework1 </span>
 <span style="color: #928374;"># </span><span style="color: #928374;">READ THE WORDS, LETTERS, </span>
@@ -1227,9 +1227,9 @@ If you find any errors please submit a pull request
 </div>
 </div>
 
-<div id="outline-container-org1943030" class="outline-3">
-<h3 id="org1943030">Useful Macros</h3>
-<div class="outline-text-3" id="text-org1943030">
+<div id="outline-container-org1f07d54" class="outline-3">
+<h3 id="org1f07d54">Useful Macros</h3>
+<div class="outline-text-3" id="text-org1f07d54">
 <p>
 use these to develop code faster
 </p>
@@ -1264,7 +1264,7 @@ use these to develop code faster
 <span style="color: #928374;"># </span><span style="color: #928374;">print int</span>
 <span style="color: #928374;"># </span><span style="color: #928374;">param(d): int register</span>
 .macro print_int(%d)
-    <span style="color: #83a598;">la</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> %d
+    <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$a0</span><span style="color: #fe8019;">,</span> %d
     <span style="color: #83a598;">li</span> <span style="color: #fabd2f;">$v0</span><span style="color: #fe8019;">,</span> <span style="color: #d3869b; font-weight: bold;">1</span>
     <span style="color: #fb4934;">syscall</span>
 .end_macro

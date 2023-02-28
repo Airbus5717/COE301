@@ -28,7 +28,7 @@ string_pointer: .asciiz %s
 # print int
 # param(d): int register
 .macro print_int(%d)
-	la $a0, %d
+	li $a0, %d
 	li $v0, 1
 	syscall
 .end_macro
