@@ -89,6 +89,20 @@ If you find any errors please submit a pull request
 **** Task2
 #+include: "./code/Lab6_Task2.asm" src mips
 
+*** LAB 7
+**** Task1
+#+include: "./code/Lab7_Task1.asm" src mips
+
+**** Task2
+#+include: "./code/Lab7_Task2.asm" src mips
+
+*** LAB 8
+**** Task1
+#+include: "./code/Lab8_Task1.asm" src mips
+
+**** Task2
+#+include: "./code/Lab8_Task2.asm" src mips
+
 ** Homework
 *** HM1
 #+include: "./code/hmw1.asm" src mips
